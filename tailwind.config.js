@@ -9,9 +9,12 @@ export default {
       colors: {
         'dark':'#081F51',
         'primary':'#0A11E0',
-        'grey':'#544E5D',
+        'gray':'#544E5D',
         'light':'#F9F9FA'
       },
+      fontSize: {
+        base: ['18px', '26px'],
+      }
     },
   },
   plugins: [],

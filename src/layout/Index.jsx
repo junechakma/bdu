@@ -1,6 +1,6 @@
 
 import { Outlet } from 'react-router-dom'
-import TopBar from '../components/Header/TopBar'
+import TopBar from '../pages/shared/TopBar'
 
 function Index() {
   return (
