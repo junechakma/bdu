@@ -40,22 +40,22 @@ const MenuItem = ({ itemName, isActive, to, dropdownItems }) => {
   };
 
   return (
-    <div className=" relative ">
+    <div className="relative z-20">
       <Link
         to={to}
-        className={`text-dark ${isActive ? 'font-bold bg-dark text-white py-4 px-10' : ''}`}
+        className={`text-dark  py-4 px-10 hover:bg-dark hover:text-white ${isActive ? 'font-bold bg-dark text-white py-4 px-10' : ''}`}
         onMouseEnter={handleToggleDropdown}
         onMouseLeave={handleToggleDropdown}
       >
         {itemName}
       {dropdownItems && (
         <div
-          className={`absolute left-0 mt-2 ${isDropdownOpen ? 'block' : 'hidden'} bg-gray-800 text-white py-2 space-y-2`}
+          className={`absolute w-full left-0 mt-4  bg-blue-900 text-white text-center  divide-y ${isDropdownOpen ? 'block' : 'hidden'}`}
           onMouseEnter={()=>setDropdownOpen(true)}
           onMouseLeave={()=>setDropdownOpen(false)}
         >
           {dropdownItems.map((item, index) => (
-            <Link key={index} to={`${to}/${item}`} className="block px-4 py-2">
+            <Link key={index} to={`${to}/${item}`} className="block px-4 py-4  hover:bg-blue-800">
               {item}
             </Link>
           ))}

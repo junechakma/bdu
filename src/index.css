@@ -24,3 +24,12 @@ body{
 .title{
     @apply text-2xl font-bold
 }
+
+.sub-heading{
+    @apply text-sm text-gray w-1/2 
+}
+
+.mission{
+    background-image: url("../src/assets/home/bg/wave.png");
+    object-fit: contain;
+}
