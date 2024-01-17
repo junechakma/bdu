@@ -1,7 +1,7 @@
 import { IoIosSearch } from 'react-icons/io'
 import logo1 from '../../assets/logo/logo1.png'
 import MenuBar from './MenuBar'
-import NavigationBar from './NavigationBar'
+
 function Header() {
   return (
     <>

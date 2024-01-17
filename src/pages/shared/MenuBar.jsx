@@ -14,7 +14,7 @@ const MenuBar = () => {
     { name: 'Gallery', path: '/gallery', dropdownItems: ['Item 5', 'Item 6'] },
     { name: 'Research', path: '/research', dropdownItems: ['Item 7', 'Item 8'] },
     { name: 'Peoples', path: '/peoples', dropdownItems: ['Item 9', 'Item 10'] },
-    { name: 'Contact', path: '/contact', dropdownItems: ['Item 11', 'Item 12'] },
+    { name: 'Contact', path: '/contact'},
   ];
 
   return (
