@@ -10,7 +10,7 @@
   
 }
 body{
-    background-color: white;
+    @apply bg-light
 }
 
 .button {

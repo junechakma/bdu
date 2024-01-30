@@ -3,6 +3,7 @@ import Index from '../layout/Index'
 import Home from '../pages/Home/Home'
 import About from '../pages/About/About'
 import Contact from '../pages/Contact/Contact'
+import Notice from '../pages/Notice/Notice'
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
                 path:'/contact',
                 element:<Contact/>
             },
+            {
+                path:"/notice",
+                element:<Notice/>
+            }
 
         ]
     }

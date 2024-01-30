@@ -14,7 +14,9 @@ import achievement1 from '../../assets/home/achievement1.png'
 import upcoming from '../../assets/home/upcoming1.png'
 
 import logo2 from '../../assets/home/logo1.png'
+
 import Header from '../shared/Header'
+
 const facaltyDetails = [
   {
     id: 1,
@@ -221,7 +223,7 @@ function Home() {
           <h1 className='heading mt-4' >Upcoming Activity</h1>
           <div className='flex flex-row items-center justify-between'>
             <p className='sub-heading mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <NavLink to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</NavLink>
+            <Link to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</Link>
           </div>
 
           <div className=' pt-16 flex flex-row gap-x-2 gap-y-10 flex-wrap'>
