@@ -39,23 +39,23 @@ function Contact() {
                     <div className="pt-10 md:pt-20">
                         <div className="flex flex-col items-center justify-center gap-3">
                             <h1 className="heading">Lets talk with us </h1>
-                            <p className=" md:text-lg  text-center py-3 md:w-5/6">{`Ready to transform your digital presence? Let's chat and explore how our tailored solutions  can elevate your brand and drive success in the digital landscape.`}</p>
+                            <p className="sub-heading ">{`Ready to transform your digital presence? Let's chat and explore how our tailored solutions  can elevate your brand and drive success in the digital landscape.`}</p>
                         </div>
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-10 my-10">
                             <div className="flex items-center gap-3">
                                 <FaLocationDot size={26} className=" text-primary" />
-                                <p>Kaliakair, Gazipur-1750,<br /> Bangladesh.</p>
+                                <p className='text-sm md:text-base'>Kaliakair, Gazipur-1750,<br /> Bangladesh.</p>
                             </div>
 
                             <div className="flex items-center gap-3">
                                 <FaPhoneAlt size={26} className=" text-primary" />
-                                <p>09666775534</p>
+                                <p className='text-sm md:text-base'>09666775534</p>
                             </div>
 
                             <div className="flex items-center gap-3">
                                 <MdEmail size={26} className=" text-primary" />
-                                <p>info@bdu.ac.bd</p>
+                                <p className='text-sm md:text-base'>info@bdu.ac.bd</p>
                             </div>
                         </div>
 

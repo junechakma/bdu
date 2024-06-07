@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home'
 import About from '../pages/About/About'
 import Contact from '../pages/Contact/Contact'
 import Notice from '../pages/Notice/Notice'
+import Academic from '../pages/Acaddemic/Academic'
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
             {
                 path:"/notice",
                 element:<Notice/>
+            },
+            {
+                path:"/academic",
+                element:<Academic/>
             }
 
         ]

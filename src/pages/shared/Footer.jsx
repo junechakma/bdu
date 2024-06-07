@@ -4,13 +4,14 @@ import logo1 from '../../assets/logo/logo1.png'
 function Footer() {
   return (
     <div className='w-[80vw] mx-auto'>
-      <div className=' flex flex-row justify-between py-10'>
-        <div className='w-1/3 pr-20 flex flex-col gap-4'>
+      <div className='w-full flex flex-col md:flex-row justify-between py-10 gap-y-10'>
+        <div className='w-full md:w-1/3 pr-20 flex flex-col gap-4'>
           <img src={logo1} className='w-1/2'></img>
-          <p className='text-sm'>Bangabandhu Sheikh Mujibur Rahman Digital University, Bangladesh is the first specialized government digital university in Bangladesh.</p>
+          <p className='text-sm '>Bangabandhu Sheikh Mujibur Rahman Digital University, Bangladesh is the first specialized government digital university in Bangladesh.</p>
         </div>
-        <div className='w-2/3 flex flex-row  justify-between gap-16'>
-          <div className='flex flex-col gap-4'>
+
+        <div className='w-full md:w-2/3 flex flex-row flex-wrap md:flex-row md:flex-nowrap  justify-between gap-y-10 md:gap-16'>
+          <div className=' flex flex-col gap-4'>
             <h1 className='font-bold text-lg'>BDU</h1>
             <Link to="/" className='text-sm text-gray hover:text-primary'>Why BDU</Link>
             <Link className='text-sm text-gray hover:text-primary'>Programs</Link>
@@ -35,7 +36,7 @@ function Footer() {
             <Link className='text-sm text-gray hover:text-primary'>Tuition &  Fees</Link>
           </div>
           <div className='flex flex-col gap-4'>
-            <h1 className='font-bold text-lg'>Get in Touch with Us</h1>
+            <h1 className='font-bold text-sm md:text-lg'>Get in Touch with Us</h1>
             <div >
               <p className='text-gray'>
                 Kaliakair, Gazipur, Bangladesh
@@ -52,7 +53,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className='flex flex-row justify-between text-sm'>
+      <div className='flex flex-col  md:flex-row text-center md:justify-between text-sm'>
         <p>Bangabandhu Sheikh Mujibur Rahman Digital University, Bangladesh  </p>
         <p> -   © 2023 All Rights Reserved</p>
         <p> Made with Mahir Mahbub and Pallab Sarkar</p>

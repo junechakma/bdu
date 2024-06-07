@@ -65,18 +65,18 @@ const achievementsData = [
     id: 1,
     title: 'Robo Tech Olympiad 2023',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-    image: "achievement1"
+    image: './assets/home/achievement1.png'
   }, {
     id: 2,
     title: 'Graduated Programs',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-    image: "achievement1"
+    image: './assets/home/achievement2.png'
   },
   {
     id: 3,
     title: 'Robo Tech Olympiad 2022',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-    image: "achievement1"
+    image: './assets/home/achievement3.png'
   }
 ]
 const upcomingActivity = [
@@ -105,18 +105,21 @@ const latestNews = [
     id: 1,
     title: 'Atomic clocks could detect exotic low-mass fields from merging black holes',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    agenda: 'Event'
+    agenda: 'Event',
+    image: './assets/home/latest1.png'
   }, {
     id: 2,
     title: '9,000-Year-Old Grave of a Female Hunter in Peru Shows Women Tackled Big Game',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
     agenda: 'New Course Open',
+    image: './assets/home/latest2.png'
   },
   {
     id: 3,
     title: 'Emilly Borthwick-Wong promoted to executive director of undergradu...',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-    agenda: 'Picnic'
+    agenda: 'Picnic',
+    image: './assets/home/latest3.png'
   }
 ]
 
@@ -138,7 +141,7 @@ function Home() {
 
       {/* End of the Header */}
 
-      <main className='object-contain ' style={{ backgroundImage: `url(${wave})` }}>
+      <main className='object-contain bg-white' style={{ backgroundImage: `url(${wave})` }}>
 
         {/*  */}
         <div className=' mission w-[80vw]  mx-auto  flex flex-row gap-10 pt-56 pb-20  items-center object-contain' style={{ backgroundImage: `url(${wave})` }}>
@@ -177,7 +180,7 @@ function Home() {
             <div className='flex flex-row gap-5 my-10'>
               {
                 academicDetails.map((item) => (
-                  <div key={item.id} className='flex flex-col gap-5 w-1/3 p-6 bg-white hover:shadow-2xl rounded-lg'>
+                  <div key={item.id} className='flex flex-col gap-5 w-1/3 p-6 bg-white hover:shadow-2xl rounded-lg shadow-md'>
                     <div className='flex flex-row gap-5 items-center'>
                       <img src={icon5} className='w-16 h-16' />
                       <h2 className='title'>{item.title}</h2>
@@ -203,7 +206,7 @@ function Home() {
               achievementsData.map((item) => (
                 <div key={item.id} className='w-1/3 relative'>
 
-                  <img src={achievement1} className='w-full h-full opacity-70 ' />
+                  <img src={item.image} className='w-full h-full opacity-70 ' />
                   <div className='p-5 flex flex-col gap-5 justify-center bg-gradient-to-b from-transparent to-[#0B108A] absolute top-1/2 h-1/2'>
 
                     <h2 className='title text-[#06040A]'>{item.title}</h2>
@@ -256,9 +259,9 @@ function Home() {
 
           <div className=' pt-16 flex flex-row gap-6  flex-wrap'>
             {
-              latestNews.map((item) => (
-                <div className='w-[25vw] flex flex-col gap-2'>
-                  <img src={upcoming} className='w-full rounded-md'></img>
+              latestNews.map((item, index) => (
+                <div className='w-[25vw] flex flex-col gap-2' key={index}>
+                  <img src={item.image} className='w-full rounded-md'></img>
 
                   <div className=' p-5 flex flex-col gap-2'>
                     <p className='text-primary text-sm'>{item.agenda}</p>
@@ -277,7 +280,7 @@ function Home() {
           <h1 className='heading text-center mt-4' >Industry Collaboration</h1>
 
           <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <div className='flex flex-row justify-between gap-5 my-10 bg-primary'>
+          <div className='flex flex-row justify-between gap-5 my-10 bg-[#081f51]'>
             <img src={logo2} className='py-10'></img>
             <img src={logo2} className='py-10'></img>
             <img src={logo2} className='py-10'></img>
