@@ -5,31 +5,66 @@ import About from '../pages/About/About'
 import Contact from '../pages/Contact/Contact'
 import Notice from '../pages/Notice/Notice'
 import Academic from '../pages/Acaddemic/Academic'
+import Peoples from '../pages/Peoples/Peoples'
+import Gallery from '../components/Gallery/Gallery'
+import GalleryPage from '../pages/Gallery/GalleryPage'
+import FacultyDetailsPage from '../pages/Peoples/FacultyDetailsPage'
+import Undergrade from '../pages/Acaddemic/Undergrade'
+import AcademicIndex from '../pages/Acaddemic/AcademicIndex'
+import Research from '../pages/Research/Research'
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element:<Index/>,
+        element: <Index />,
         children: [
             {
                 path: '/',
-                element:<Home/>
+                element: <Home />
             },
             {
-                path:'/about',
-                element:<About/>
+                path: '/about',
+                element: <About />
             },
             {
-                path:'/contact',
-                element:<Contact/>
+                path: '/contact',
+                element: <Contact />
             },
             {
-                path:"/notice",
-                element:<Notice/>
+                path: "/notice",
+                element: <Notice />
             },
             {
-                path:"/academic",
-                element:<Academic/>
+                path: "/academic",
+                element: <AcademicIndex />,
+                children: [
+                    {
+                        path: '',
+                        element: <Academic/>
+                    }
+                    ,
+                    {
+                        path: 'undergrade',
+                        element: <Undergrade/>
+                    }
+                ]
+            },
+            {
+                path: "/peoples",
+                element: <Peoples />
+            },
+            {
+                path: "/research",
+                element: <Research/>
+            },
+            {
+                path: "/gallery",
+                element: <GalleryPage />
+            }
+            ,
+            {
+                path: '/faculty-details/:id',
+                element: <FacultyDetailsPage />
             }
 
         ]

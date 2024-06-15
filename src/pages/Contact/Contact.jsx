@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Newsletter from '../../components/Newsletter';
 
 function Contact() {
 
@@ -164,6 +165,10 @@ function Contact() {
                                 )}
                             </div>
                         </div>
+                    </div>
+
+                    <div className='my-16'>
+                        <Newsletter/>
                     </div>
                 </main>
             </section>
