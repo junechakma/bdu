@@ -70,8 +70,8 @@ const Research = () => {
 
                 <div className="absolute inset-0 bg-blue-700 opacity-50 z-0"></div>
                 <div className="relative z-10 flex flex-col gap-4 items-center text-center">
-                <h1 className="text-4xl font-semibold text-white z-10">Research Area</h1>
-                    <p className="text-center z-10">
+                <h1 className="text-2xl md:text-4xl font-semibold text-white z-10">Research Area</h1>
+                    <p className="text-sm md:text-base text-center px-6 z-10">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         <br />
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,8 +79,8 @@ const Research = () => {
                 </div>
             </div>
 
-            <div className="w-[86%] md:w-[80vw] mb-10 mx-auto  px-4 py-16">
-                <h2 className="text-2xl font-bold mb-4 text-black pb-10">The Department of Software Engineering facilitates environments for the following research areas:</h2>
+            <div className="w-[90%] md:w-[80vw] mb-10 mx-auto  px-4 py-16">
+                <h2 className="text-xl md:text-2xl font-bold mb-4 text-black pb-10 text-center">The Department of Software Engineering facilitates environments for the following research areas:</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {researchAreas.map((area, index) => (
                         <div key={index} className="flex items-start p-4 bg-white shadow rounded-lg">

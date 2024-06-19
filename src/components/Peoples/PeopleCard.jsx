@@ -11,7 +11,7 @@ const PeopleCard = ({ image, name, designation, email }) => {
 
     return (
         <div
-            className="grid grid-cols-2 w-[45vw] rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+            className="grid grid-cols-1 md:grid-cols-2 md:w-[38vw] rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
             onClick={handleNavigate}
         >
             <div className='flex items-center justify-center w-full h-full overflow-hidden'>

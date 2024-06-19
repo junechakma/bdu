@@ -3,7 +3,7 @@ import Gallery from '../../components/Gallery/Gallery'
 
 const GalleryPage = () => {
     return (
-        <div className='w-[86%] md:w-[80vw] mb-10 mx-auto '>
+        <div className='w-[90%] md:w-[80vw] mb-10 mx-auto '>
             <div className="py-4 md:my-16 flex  flex-col items-center justify-center">
 
                 <h1 className="heading text-center">Gallery</h1>

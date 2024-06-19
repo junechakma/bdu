@@ -44,7 +44,7 @@ const Peoples = () => {
         <div className='bg-white pb-10'>
             <div className='relative flex flex-col items-center justify-center h-full'>
                 <div className='h-[60vh] w-full flex items-center pt-[3%] flex-col gap-10 bg-light relative'>
-                    <h1 className="text-4xl font-semibold text-black z-10">Faculty</h1>
+                    <h1 className="text-2xl md:text-4xl font-semibold text-black z-10">Faculty</h1>
                     <p className="text-center z-10">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         <br />
@@ -53,9 +53,9 @@ const Peoples = () => {
                     <img src='/assets/home/bg/wave.png' className='object-contain w-3/4 -left-36 absolute -bottom-36' />
                 </div>
 
-                <div className='-translate-y-40 bottom-0 w-[70%] shadow-md  bg-white grid grid-cols-2  text-black rounded-md'>
-                    <img src='/assets/peoples/dean.png' className='w-full' />
-                    <div className='bg-[#544E5D] p-10 text-white pt-24'>
+                <div className='-translate-y-40 bottom-0 w-[90vw] md:w-[70%] shadow-md  bg-white grid grid-cols-1 md:grid-cols-2  text-black rounded-md'>
+                    <img src='/assets/peoples/dean.png' className='w-full object-contain self-center' />
+                    <div className='bg-[#544E5D] p-4 md:p-10 text-white pt-10 md:pt-24'>
                         <h1 className='text-2xl font-semibold text-white pb-6'>Dean Name</h1>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         </p>
@@ -83,7 +83,7 @@ const Peoples = () => {
 
                 <div>
                     <h1 className='text-2xl text-black font-semibold '>Professors</h1>
-                    <div className='flex gap-6 my-10'>
+                    <div className='flex gap-6 my-10 flex-wrap '>
                         {
                             professors.map((item, index) => (
                                 <PeopleCard
@@ -100,7 +100,7 @@ const Peoples = () => {
 
                 <div>
                     <h1 className='text-2xl text-black font-semibold '>Assistant Professors</h1>
-                    <div className='flex gap-6 my-10'>
+                    <div className='flex gap-6 my-10 flex-wrap'>
                         {
                             assistantProfessors.map((item, index) => (
                                 <PeopleCard

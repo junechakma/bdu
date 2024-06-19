@@ -128,14 +128,14 @@ function Home() {
     <>
       {/* Header */}
       {/* Hero Image */}
-      <div className="relative h-[80vh] bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }}>
-        <div className="absolute w-1/2 inset-0 bg-gradient-to-r from-black to-transparent"></div>
-        <div className="absolute w-1/2  top-1/2 -translate-y-1/2 left-[10vw] text-white font-bold text-2xl">
-          <p className='text-6xl font-bold mb-5 tracking-wide leading-snug'>
+      <div className="relative h-[30vh] md:h-[80vh] bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }} >
+        <div className="absolute w-full md:w-1/2 h-1/2 md:h-full bottom-0 bg-gradient-to-t md:bg-gradient-to-r from-black to-transparent"></div>
+        <div className="absolute bottom-0 w-full md:w-1/2  md:top-1/2 md:-translate-y-1/2  md:left-[10vw] text-white md:font-bold md:text-2xl flex md:block flex-col justify-center items-center">
+          <p className='text-xl md:text-6xl font-bold mb-5 tracking-wide leading-snug text-center md:text-left'>
             Welcome to the <br /> future educations systems
           </p>
 
-          <Link to="/" className='button'>Learn More <IoIosArrowRoundForward size={26} /></Link>
+          <Link to="/" className='text-sm  items-center bg-blue-800 p-1 rounded-md mb-2 inline-flex'>Learn More <IoIosArrowRoundForward size={26} /></Link>
         </div>
       </div>
 
@@ -144,26 +144,26 @@ function Home() {
       <main className='object-contain bg-white' style={{ backgroundImage: `url(${wave})` }}>
 
         {/*  */}
-        <div className=' mission w-[80vw]  mx-auto  flex flex-row gap-10 pt-56 pb-20  items-center object-contain' style={{ backgroundImage: `url(${wave})` }}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/rXSWbpUVG3Q?si=yK6E7ARl5aLs9Rxr" title="YouTube video player" frameborder="0" allowfullscreen className='w-1/2'></iframe>
-          <div className=' w-1/2 flex flex-col gap-10'>
-            <h1 className='text-4xl font-bold'>BDU Cyber Physical Mission <br /> and Vision</h1>
-            <p className='text-gray'>The Department of Software Engineering will build skilled human resources by conducting up-to-date educational activities through integrated implementation of Face to Face, Blended Learning and Flipped Learning Methods. Under this section, a four-year Bachelor of Science in Software Engineering program compatible with Industry 4.0 has been launched.</p>
+        <div className=' mission w-[80vw]  mx-auto  flex flex-col md:flex-row gap-10 pt-10 md:pt-56 pb-20  items-center object-contain' style={{ backgroundImage: `url(${wave})` }}>
+          <iframe  src="https://www.youtube.com/embed/rXSWbpUVG3Q?si=yK6E7ARl5aLs9Rxr" title="YouTube video player" frameborder="0" allowfullscreen className='w-[90vw] md:w-1/2 h-[30vh] md:h-[40vh]'></iframe>
+          <div className=' md:w-1/2 flex flex-col gap-10'>
+            <h1 className='text-2xl md:text-4xl font-bold text-center'>BDU Cyber Physical Mission <br /> and Vision</h1>
+            <p className='text-gray text-center md:text-left'>The Department of Software Engineering will build skilled human resources by conducting up-to-date educational activities through integrated implementation of Face to Face, Blended Learning and Flipped Learning Methods. Under this section, a four-year Bachelor of Science in Software Engineering program compatible with Industry 4.0 has been launched.</p>
           </div>
         </div>
 
         {/* Details of Software and machine */}
-        <div className=' mx-auto  w-[80vw] flex flex-col my-20'>
+        <div className=' mx-auto  w-[80vw] flex flex-col mb-10 md:my-20'>
           <h1 className='heading text-center pb-10'>Details of Software and machine <br /> Intelligence</h1>
 
           <div className='flex flex-row flex-wrap gap-5 '>
             {
               facaltyDetails.map((item) => (
-                <div key={item.id} className='flex flex-row gap-5 w-[39vw] p-6 hover:shadow-md rounded-lg'>
-                  <img src={icon1} className='w-16 h-16' />
+                <div key={item.id} className='flex flex-row gap-5 md:w-[39vw] p-6 hover:shadow-md rounded-lg'>
+                  <img src={icon1} className='w-12 h-12 md:w-16 md:h-16' />
                   <div className='flex flex-col gap-2'>
                     <h2 className='text-lg'>{item.title}</h2>
-                    <p className='text-gray'>{item.description}</p>
+                    <p className='text-gray text-sm md:text-base'>{item.description}</p>
                   </div>
                 </div>
               ))
@@ -173,17 +173,17 @@ function Home() {
 
         {/* Upcoming Session */}
 
-        <div className='  bg-light pt-16 pb-10'>
+        <div className=' bg-light pt-16 pb-10'>
           <div className='mx-auto  w-[80vw]'>
             <h2 className='text-center uppercase text-primary'>Upcoming Session 2023-2024</h2>
             <h1 className='heading text-center mt-4' >Academic Details</h1>
-            <div className='flex flex-row gap-5 my-10'>
+            <div className='flex flex-col md:flex-row gap-5 my-10'>
               {
                 academicDetails.map((item) => (
-                  <div key={item.id} className='flex flex-col gap-5 w-1/3 p-6 bg-white hover:shadow-2xl rounded-lg shadow-md'>
+                  <div key={item.id} className='flex flex-col gap-5 md:w-1/3 p-6 bg-white hover:shadow-2xl rounded-lg shadow-md'>
                     <div className='flex flex-row gap-5 items-center'>
                       <img src={icon5} className='w-16 h-16' />
-                      <h2 className='title'>{item.title}</h2>
+                      <h2 className='text-xl md:text-2xl font-semibold text-wrap'>{item.title}</h2>
                     </div>
                     <div>
                       <p className='text-gray'>{item.description}</p>
@@ -201,10 +201,10 @@ function Home() {
           <h1 className='heading text-center mt-4' >Achievements</h1>
 
           <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <div className='flex flex-row gap-5 my-10'>
+          <div className='flex flex-col md:flex-row gap-5 my-10'>
             {
               achievementsData.map((item) => (
-                <div key={item.id} className='w-1/3 relative'>
+                <div key={item.id} className='md:w-1/3 relative'>
 
                   <img src={item.image} className='w-full h-full opacity-70 ' />
                   <div className='p-5 flex flex-col gap-5 justify-center bg-gradient-to-b from-transparent to-[#0B108A] absolute top-1/2 h-1/2'>
@@ -229,17 +229,17 @@ function Home() {
             <Link to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</Link>
           </div>
 
-          <div className=' pt-16 flex flex-row gap-x-2 gap-y-10 flex-wrap'>
+          <div className=' pt-16 flex flex-col md:flex-row gap-x-2 gap-y-10 flex-wrap'>
             {
               upcomingActivity.map((item) => (
-                <div className='w-[38vw] flex flex-row gap-2'>
-                  <div className='w-1/2  relative'>
+                <div className='md:w-[38vw] flex flex-col md:flex-row gap-2'>
+                  <div className='md:w-1/2  relative'>
                     <img src={upcoming} className='w-full rounded-md'></img>
                     <div className='bg-primary w-20 h-20 absolute -right-5 bottom-0 flex items-center p-4'>
                       <p className='text-white text-center'>8 NOV</p>
                     </div>
                   </div>
-                  <div className='w-1/2 p-5 flex flex-col gap-2'>
+                  <div className='md:w-1/2 p-5 flex flex-col gap-2'>
                     <h2 className='title text-[#06040A]'>{item.title}</h2>
                     <p className='text-black text-sm'>{item.description}</p>
                   </div>
@@ -253,20 +253,20 @@ function Home() {
         <div className='mx-auto  w-[80vw] pt-16'>
           <h1 className='heading mt-4' >Latest News</h1>
           <div className='flex flex-row items-center justify-between'>
-            <p className='sub-heading mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <NavLink to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</NavLink>
+            <p className='text-sm text-black mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <NavLink to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white text-sm md:text-ba'>Learn More</NavLink>
           </div>
 
-          <div className=' pt-16 flex flex-row gap-6  flex-wrap'>
+          <div className=' pt-16 flex flex-col md:flex-row gap-6  flex-wrap'>
             {
               latestNews.map((item, index) => (
-                <div className='w-[25vw] flex flex-col gap-2' key={index}>
+                <div className='md:w-[25vw] flex flex-col gap-2' key={index}>
                   <img src={item.image} className='w-full rounded-md'></img>
 
-                  <div className=' p-5 flex flex-col gap-2'>
+                  <div className='md:p-5 flex flex-col gap-2'>
                     <p className='text-primary text-sm'>{item.agenda}</p>
 
-                    <h2 className='title text-[#06040A]'>{item.title}</h2>
+                    <h2 className='font-semibold text-xl md:text2xl text-[#06040A]'>{item.title}</h2>
                     <p className='text-black text-sm'>{item.description}</p>
                   </div>
                 </div>
@@ -280,7 +280,7 @@ function Home() {
           <h1 className='heading text-center mt-4' >Industry Collaboration</h1>
 
           <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <div className='flex flex-row justify-between gap-5 my-10 bg-[#081f51]'>
+          <div className='flex flex-row justify-between gap-5 my-10 bg-[#081f51] overflow-x-auto'>
             <img src={logo2} className='py-10'></img>
             <img src={logo2} className='py-10'></img>
             <img src={logo2} className='py-10'></img>

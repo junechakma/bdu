@@ -97,12 +97,12 @@ function About() {
 
                 {/*  */}
                 <div className='bg-light'>
-                    <div className=' mx-auto  w-[80vw] pt-16 py-20'>
+                    <div className=' mx-auto w-[90vw] md:w-[80vw] pt-16 py-20'>
                         <h1 className='heading text-center mt-4' >What path you will take?</h1>
 
                         <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 
-                        <div className='pt-10 flex flex-row gap-5 my-10'>
+                        <div className='pt-10 flex flex-col md:flex-row gap-5 my-10'>
                             {
                                 pathData.map((item) => (
                                     <GradientCard key={item.id} title={item.title} description={item.description} image={item.image} link={item.link} />
@@ -114,7 +114,7 @@ function About() {
 
 
                 {/*  */}
-                <div className='mx-auto w-[80vw] pt-16 py-20 flex flex-col items-center'>
+                <div className='mx-auto w-[90vw] md:w-[80vw] pt-16 md:py-20 flex flex-col items-center'>
                     <h1 className='heading mt-4' >Building Gallery</h1>
                     <p className='sub-heading '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     <Gallery />

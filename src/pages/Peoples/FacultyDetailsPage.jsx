@@ -34,9 +34,9 @@ const FacultyDetailsPage = () => {
 
   return (
     <div className=" mb-10 mx-auto bg-white">
-      <div className='relative flex flex-col items-center justify-center h-full'>
+      <div className='relative flex flex-col items-center justify-center h-full mt-10'>
         <div className='h-[50vh] w-full flex items-center pt-[3%] flex-col gap-4 bg-light relative'>
-          <h1 className="text-4xl font-semibold text-black z-10">Faculty Details</h1>
+          <h1 className="text-2xl md:text-4xl font-semibold text-black z-10">Faculty Details</h1>
           <p className="text-center z-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             <br />
@@ -45,9 +45,9 @@ const FacultyDetailsPage = () => {
           <img src='/assets/home/bg/wave.png' className='object-contain w-3/4 -left-36 absolute -bottom-36' />
         </div>
 
-        <div className='-translate-y-40 bottom-0 w-[70%] shadow-md  bg-white grid grid-cols-2  text-black rounded-md'>
+        <div className='-translate-y-40 bottom-0 w-[90vw] md:w-[70%] shadow-md  bg-white grid grid-cols-1 md:grid-cols-2  text-black rounded-md'>
           <img src='/assets/peoples/dean.png' className='w-full' />
-          <div className='bg-[#544E5D] p-10 text-white pt-24 rounded-md'>
+          <div className='bg-[#544E5D] p-10 text-white md:pt-24 rounded-md'>
             <div>
               <h2 className="text-2xl font-semibold">{faculty.name}</h2>
               <p className="text-lg">{faculty.designation}</p>
@@ -64,7 +64,7 @@ const FacultyDetailsPage = () => {
         </div>
       </div>
 
-      <div className='w-[86%] md:w-[80vw] mb-10 mx-auto pb-16'>
+      <div className='w-[86%] md:w-[80vw] mb-10 mx-auto pb-16 text-black'>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="p-4 bg-white rounded-lg shadow">

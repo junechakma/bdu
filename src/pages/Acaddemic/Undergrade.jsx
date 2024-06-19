@@ -33,27 +33,27 @@ const Undergrade = () => {
 
       </div>
 
-      <div className="container mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold mb-4">Course Plan:</h2>
+      <div className="w-[90vw] md:w-[80vw] mx-auto bg-white p-6 md:p-20 flex flex-col gap-10 rounded-xl shadow-md text-black -translate-y-10">
+        <h2 className="text-3xl font-bold text-center">Course Plan</h2>
         <div className="overflow-x-auto">
-          <table className="min-w-full bg-white border border-gray-200">
+          <table className="min-w-full bg-white text-black">
             <thead>
               <tr>
-                <th className="py-2 px-4 border-b">Lecture</th>
-                <th className="py-2 px-4 border-b">Course ID</th>
-                <th className="py-2 px-4 border-b">Course Title</th>
-                <th className="py-2 px-4 border-b">Level</th>
-                <th className="py-2 px-4 border-b">Term</th>
+                <th className="px-4 py-2 border">Lecture</th>
+                <th className="px-4 py-2 border">Course ID</th>
+                <th className="px-4 py-2 border">Course Title</th>
+                <th className="px-4 py-2 border">Level</th>
+                <th className="px-4 py-2 border">Term</th>
               </tr>
             </thead>
             <tbody>
               {courses.map((course) => (
                 <tr key={course.id}>
-                  <td className="py-2 px-4 border-b">{course.id}</td>
-                  <td className="py-2 px-4 border-b">{course.code}</td>
-                  <td className="py-2 px-4 border-b">{course.title}</td>
-                  <td className="py-2 px-4 border-b">{course.level}</td>
-                  <td className="py-2 px-4 border-b">{course.term}</td>
+                  <td className="px-4 py-2 border">{course.id}</td>
+                  <td className="px-4 py-2 border">{course.code}</td>
+                  <td className="px-4 py-2 border">{course.title}</td>
+                  <td className="px-4 py-2 border">{course.level}</td>
+                  <td className="px-4 py-2 border">{course.term}</td>
                 </tr>
               ))}
             </tbody>

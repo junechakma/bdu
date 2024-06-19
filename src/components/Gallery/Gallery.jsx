@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import PhotoAlbum from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
+import { IoMdArrowDropleftCircle, IoMdArrowDropright, IoMdArrowDroprightCircle, IoMdClose } from "react-icons/io";
+// import PhotoAlbum from "react-photo-album";
+// import Lightbox from "yet-another-react-lightbox";
+// import "yet-another-react-lightbox/styles.css";
+// import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+// import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+// import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+// import Zoom from "yet-another-react-lightbox/plugins/zoom";
+// import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import Modal from 'react-modal';
-
 
 // Replace these with your local photo URLs or server endpoints
 // const photoUrls = [
@@ -18,6 +18,7 @@ import Modal from 'react-modal';
 //     "./gallery/3.png",
 //     "./gallery/4.png"
 // ];
+
 const images = [
     "./gallery/1.png",
     "./gallery/2.png",
@@ -51,7 +52,7 @@ const Gallery = () => {
     return (
         <div className="p-4">
             <h1 className="text-2xl font-bold mb-4">Building Gallery</h1>
-            
+
             <div className="grid grid-cols-4 gap-4">
                 {images.map((image, index) => (
                     <img
@@ -69,14 +70,14 @@ const Gallery = () => {
                 onRequestClose={closeModal}
                 contentLabel="Image Modal"
                 className="flex items-center justify-center p-4"
-                overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center w-screen"
+                overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center w-screen "
             >
                 <div>
                     <button
                         onClick={closeModal}
-                        className="absolute top-0 right-0 bg-gray-300 rounded-full p-6 m-2"
+                        className="absolute top-0 right-0 bg-white rounded-full p-2 m-2"
                     >
-                        &times;
+                        <IoMdClose size={23} />
                     </button>
                     <button
                         onClick={prevImage}
@@ -93,24 +94,23 @@ const Gallery = () => {
                 </div>
 
                 <div className="relative bg-white p-4">
-
                     <button
                         onClick={closeModal}
-                        className="absolute top-0 right-0 bg-gray-300 rounded-full p-2 m-2 md:hidden"
+                        className="absolute -top-4 -right-4 bg-white bg-opacity-35 rounded-full p-2 m-2 md:hidden shadow-md"
                     >
-                        &times;
+                        <IoMdClose size={23} className="text-red-500"/>
                     </button>
                     <button
                         onClick={prevImage}
                         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 m-2 md:hidden"
                     >
-                        &larr;
+                        <IoMdArrowDropleftCircle/>
                     </button>
                     <button
                         onClick={nextImage}
                         className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 m-2 md:hidden"
                     >
-                        &rarr;
+                        <IoMdArrowDroprightCircle/>
                     </button>
 
                     <img src={images[currentImageIndex]} alt="Current" className="max-w-full max-h-full" />

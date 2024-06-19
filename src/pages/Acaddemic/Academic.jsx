@@ -66,8 +66,8 @@ const Academic = () => {
         <div className='bg-white pb-10'>
             <div className='relative flex flex-col items-center justify-center h-full'>
 
-                <div className='h-[60vh] w-full flex items-center pt-[6%]  flex-col gap-10 bg-light relative' >
-                    <h1 className="text-4xl font-semibold text-black p z-10">Software Engineering Curriculum</h1>
+                <div className='h-[60vh] w-full flex items-center pt-[6%]  flex-col gap-4 md:gap-10 bg-light relative' >
+                    <h1 className="text-2xl md:text-4xl font-semibold text-black z-10 text-center">Software Engineering Curriculum</h1>
                     <p className="text-center z-10">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         <br />
@@ -76,7 +76,7 @@ const Academic = () => {
                     <img src='/assets/home/bg/wave.png' className='object-contain w-3/4 -left-36 absolute -bottom-36'/>
                 </div>
 
-                <div className='-translate-y-40 bottom-0 w-[70%] shadow-md  bg-white flex flex-col gap-4 px-20 py-10 text-sm text-black rounded-md'>
+                <div className='-translate-y-40 bottom-0 w-[80%] md:w-[70%] shadow-md  bg-white flex flex-col gap-4 px-8 md:px-20 py-10 text-sm text-black rounded-md'>
                     <div className='flex flex-col items-center gap-4'>
                         <h1 className='text-2xl font-semibold text-black '>Objective</h1>
                         <p className='text-center'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."         </p>
@@ -99,10 +99,11 @@ const Academic = () => {
                 </div>
             </div>
 
-            <div className='w-[86%] md:w-[80vw] mb-10 mx-auto '>
+            <div className='w-[90%] md:w-[80vw] mb-10 mx-auto '>
 
-                <div className="p-10 bg-white shadow-md mb-16 rounded-md">
+                <div className="md:p-10 bg-white shadow-md mb-16 rounded-md">
                     <h2 className="text-2xl font-semibold mb-4 text-black pb-6">Course Outcomes:</h2>
+                    <div className="overflow-x-auto">
                     <table className="min-w-full bg-white text-black">
                         <thead>
                             <tr className=''>
@@ -141,10 +142,12 @@ const Academic = () => {
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
-                <div className="p-10 bg-white my-16 rounded-md shadow-md">
+                <div className="md:p-10 bg-white my-16 rounded-md shadow-md">
                     <h2 className="text-2xl font-semibold mb-4 text-black pb-6">Mapping of Knowledge Profile, Complex Engineering Problem Solving and Complex Engineering Activities:</h2>
+                    <div className="overflow-x-auto">
                     <table className="min-w-full bg-white text-black">
                         <thead>
                             <tr>
@@ -181,10 +184,12 @@ const Academic = () => {
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
                 <div className="p-10 bg-white my-16 rounded-md shadow-md">
                     <h2 className="text-2xl font-bold mb-4 text-black pb-6">Lecture Plan:</h2>
+                    <div className="overflow-x-auto">
                     <table className="min-w-full bg-white  text-black">
                         <thead>
                             <tr>
@@ -207,9 +212,10 @@ const Academic = () => {
                             ))}
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
-                <div className='shadow-md p-10 mx-16 text-black flex flex-col gap-6 rounded-md'>
+                <div className='shadow-md p-10 md:mx-16 text-black flex flex-col gap-6 rounded-md'>
                     <div className='flex flex-col items-center justify-end'>
                         <h1 className='text-2xl'>Text Book</h1>
                         <p>1.13.1 Shigley’s Mechanical Engineering Design (10th SI edition) by Budynas R.G. and Nisbett J.K., McGraw Hill, 2014</p>
