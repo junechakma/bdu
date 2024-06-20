@@ -28,7 +28,7 @@ function Header() {
           </div>
         </div>
 
-        <div className='block md:hidden'>
+        <div className='block md:hidden self-end'>
           {
             !toggleNavbar ? <IoMdMenu color='black' size={32} onClick={()=>setToggleNavbar(!toggleNavbar)}/> :<IoMdClose  color='black' size={32} onClick={()=>setToggleNavbar(!toggleNavbar)}/>
           }
