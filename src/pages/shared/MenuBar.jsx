@@ -1,4 +1,3 @@
-// MenuBar.js
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -33,7 +32,7 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
         ))}
       </div>
 
-      <div className={`absolute bg-white flex md:hidden flex-col gap-10 py-10 w-1/2 z-20  ${toggleNavbar ? "right-0 duration-300 shadow-xl" : "-right-1/2 duration-300 hidden"}`}>
+      <div className={`absolute bg-white flex md:hidden flex-col gap-10 py-10 w-1/2 z-20 ${toggleNavbar ? "right-0 duration-300 shadow-xl" : "-right-1/2 duration-300 hidden"}`}>
         {menuItems.map((menuItem) => (
           <MenuItem
             key={menuItem.name}
@@ -43,6 +42,7 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
             dropdownItems={menuItem.dropdownItems}
             toggleNavbar={toggleNavbar}
             seToggleNavbar={seToggleNavbar}
+            mobileView={true}
           />
         ))}
       </div>
@@ -50,7 +50,7 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
   );
 };
 
-const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, seToggleNavbar }) => {
+const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, seToggleNavbar, mobileView = false }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const handleToggleDropdown = () => {
@@ -66,27 +66,27 @@ const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, seToggl
   return (
     <div className="relative z-20">
       <Link
-        to={to}
-        className={`text-dark py-4 px-10 hover:bg-dark hover:text-white ${isActive ? 'font-bold bg-dark text-white' : ''}`}
-        onMouseEnter={handleToggleDropdown}
-        onMouseLeave={handleToggleDropdown}
-        onClick={handleClick}
+        className={`text-dark py-4 px-10 hover:bg-dark hover:text-white cursor-pointer ${isActive ? 'font-bold bg-dark text-white' : ''}`}
+        onMouseEnter={!mobileView ? handleToggleDropdown : undefined}
+        onMouseLeave={!mobileView ? handleToggleDropdown : undefined}
+        onClick={mobileView ? handleToggleDropdown : handleClick}
+        to={`${to}`}
       >
         {itemName}
-        {dropdownItems && (
-          <div
-            className={`md:absolute w-full left-0 mt-4 bg-blue-900 text-white text-center divide-y ${isDropdownOpen ? 'block' : 'hidden'}`}
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
-          >
-            {dropdownItems.map((item, index) => (
-              <Link key={index} to={`${to}/${item}`} className="block px-4 py-4 hover:bg-blue-800" onClick={handleClick}>
-                {item}
-              </Link>
-            ))}
-          </div>
-        )}
       </Link>
+      {dropdownItems && (
+        <div
+          className={`md:absolute w-full left-0 mt-4 bg-blue-900 text-white text-center divide-y ${isDropdownOpen ? 'block' : 'hidden'}`}
+          onMouseEnter={!mobileView ? () => setDropdownOpen(true) : undefined}
+          onMouseLeave={!mobileView ? () => setDropdownOpen(false) : undefined}
+        >
+          {dropdownItems.map((item, index) => (
+            <Link key={index} to={`${to}/${item}`} className="block px-4 py-4 hover:bg-blue-800" onClick={handleClick}>
+              {item}
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

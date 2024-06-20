@@ -179,8 +179,8 @@ function Home() {
             <h1 className='heading text-center mt-4' >Academic Details</h1>
             <div className='flex flex-col md:flex-row gap-5 my-10'>
               {
-                academicDetails.map((item) => (
-                  <div key={item.id} className='flex flex-col gap-5 md:w-1/3 p-6 bg-white hover:shadow-2xl rounded-lg shadow-md'>
+                academicDetails.map((item, index) => (
+                  <div key={index} className='flex flex-col gap-5 md:w-1/3 p-6 bg-white hover:shadow-2xl rounded-lg shadow-md'>
                     <div className='flex flex-row gap-5 items-center'>
                       <img src={icon5} className='w-16 h-16' />
                       <h2 className='text-xl md:text-2xl font-semibold text-wrap'>{item.title}</h2>
