@@ -44,7 +44,7 @@ export const router = createBrowserRouter([
                     }
                     ,
                     {
-                        path: 'undergrade',
+                        path: 'undergrad',
                         element: <Undergrade/>
                     }
                 ]

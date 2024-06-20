@@ -8,7 +8,7 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Academic', path: '/academic', dropdownItems: ['undergrade'] },
+    { name: 'Academic', path: '/academic', dropdownItems: ['undergrad'] },
     { name: 'Notice', path: '/notice' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Research', path: '/research' },
