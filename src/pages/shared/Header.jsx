@@ -2,6 +2,7 @@ import { IoIosSearch, IoMdClose, IoMdMenu } from 'react-icons/io'
 import logo1 from '../../assets/logo/logo1.png'
 import MenuBar from './MenuBar'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   const [toggleNavbar, setToggleNavbar] = useState(false)
@@ -10,7 +11,9 @@ function Header() {
     <>
       <div className="pt-2 md:pt-6 w-full flex flex-row z-10">
         <div className='py-3 md:w-1/2 pl-4 md:pl-[10vw]'>
-          <img src={logo1} className='h-12 md:h-20' />
+          <Link to="/">
+            <img src={logo1} className='h-12 md:h-20' />
+          </Link>
           <p className='text-black pt-2 text-sm md:text-lg'>Department of Cyber Physical System</p>
         </div>
         <div className='hidden md:flex flex-col pt-10 md:justify-between py-3 w-full md:pr-[10vw] '>
@@ -28,9 +31,9 @@ function Header() {
           </div>
         </div>
 
-        <div className='block md:hidden self-end'>
+        <div className='block md:hidden self-start'>
           {
-            !toggleNavbar ? <IoMdMenu color='black' size={32} onClick={()=>setToggleNavbar(!toggleNavbar)}/> :<IoMdClose  color='black' size={32} onClick={()=>setToggleNavbar(!toggleNavbar)}/>
+            !toggleNavbar ? <IoMdMenu color='black' size={32} onClick={() => setToggleNavbar(!toggleNavbar)} /> : <IoMdClose color='black' size={32} onClick={() => setToggleNavbar(!toggleNavbar)} />
           }
         </div>
       </div>
@@ -38,7 +41,7 @@ function Header() {
 
       <hr className='text-black'></hr>
 
-      <MenuBar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar}/>
+      <MenuBar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar} />
     </>
   )
 }

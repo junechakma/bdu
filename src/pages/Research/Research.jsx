@@ -3,61 +3,61 @@ const researchAreas = [
     {
         title: 'Artificial Intelligence and Machine Learning',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon1.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-blue-500',
     },
     {
         title: 'Algorithms and Theory',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon2.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-orange-500',
     },
     {
         title: 'Big Data Systems and Analytics',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon3.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
     {
         title: 'Bioinformatics and Computational Biology',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon4.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
     {
         title: 'Computer Vision',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon5.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-blue-500',
     },
     {
         title: 'Cloud Computing',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon6.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
     {
         title: 'Data Science',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon7.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
     {
         title: 'Cybersecurity',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon8.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
     {
         title: 'Deep Learning',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon9.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
     {
         title: 'Software Engineering',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        icon: '/path/to/your/icon10.png', // replace with actual path to icon
+        icon: '/assets/home/icon1.png', 
         bgColor: 'bg-green-500',
     },
 ];

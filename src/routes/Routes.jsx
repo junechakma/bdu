@@ -12,6 +12,8 @@ import FacultyDetailsPage from '../pages/Peoples/FacultyDetailsPage'
 import Undergrade from '../pages/Acaddemic/Undergrade'
 import AcademicIndex from '../pages/Acaddemic/AcademicIndex'
 import Research from '../pages/Research/Research'
+import DetailsPage from '../pages/Details'
+import Postgrad from '../pages/Acaddemic/Postgrad'
 
 export const router = createBrowserRouter([
     {
@@ -40,14 +42,30 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         path: '',
-                        element: <Academic/>
+                        element: <Academic />
                     }
                     ,
                     {
                         path: 'undergrad',
-                        element: <Undergrade/>
+                        element: <Undergrade />
                     }
                 ]
+            },
+            {
+                path: '/undergrad',
+                element: <Undergrade />
+            },
+            {
+                path: '/postgrad',
+                element: <Postgrad/>
+            },
+            {
+                path: '/graduate',
+                element: <Undergrade />
+            },
+            {
+                path: '/training-programs',
+                element: <Undergrade />
             },
             {
                 path: "/peoples",
@@ -55,7 +73,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/research",
-                element: <Research/>
+                element: <Research />
             },
             {
                 path: "/gallery",
@@ -65,6 +83,10 @@ export const router = createBrowserRouter([
             {
                 path: '/faculty-details/:id',
                 element: <FacultyDetailsPage />
+            },
+            {
+                path: '/details',
+                element: <DetailsPage />
             }
 
         ]

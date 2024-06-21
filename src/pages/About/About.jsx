@@ -105,7 +105,7 @@ function About() {
                         <div className='pt-10 flex flex-col md:flex-row gap-5 my-10'>
                             {
                                 pathData.map((item) => (
-                                    <GradientCard key={item.id} title={item.title} description={item.description} image={item.image} link={item.link} />
+                                    <GradientCard key={item.id} item={item}  />
                                 ))
                             }
                         </div>

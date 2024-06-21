@@ -82,23 +82,6 @@ const Peoples = () => {
                 </div>
 
                 <div>
-                    <h1 className='text-2xl text-black font-semibold '>Professors</h1>
-                    <div className='flex gap-6 my-10 flex-wrap '>
-                        {
-                            professors.map((item, index) => (
-                                <PeopleCard
-                                    key={index}
-                                    image={item.image}
-                                    name={item.name}
-                                    designation={item.designation}
-                                    email={item.email}
-                                />
-                            ))
-                        }
-                    </div>
-                </div>
-
-                <div>
                     <h1 className='text-2xl text-black font-semibold '>Assistant Professors</h1>
                     <div className='flex gap-6 my-10 flex-wrap'>
                         {

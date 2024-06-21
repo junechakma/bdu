@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
+const MenuBar = ({ toggleNavbar, setToggleNavbar }) => {
   const location = useLocation();
   const currentPath = location.pathname;
 
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Academic', path: '/academic', dropdownItems: ['undergrad'] },
+    { name: 'Academic', path: '/academic', dropdownItems: [{ name: 'Undergrad', path: '/undergrad' }, { name: 'Postgrad', path: '/postgrad' }] },
     { name: 'Notice', path: '/notice' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Research', path: '/research' },
     { name: 'Peoples', path: '/peoples' },
     { name: 'Contact', path: '/contact' },
   ];
+
+  const closeMobileMenu = () => {
+    setToggleNavbar(false);
+  };
 
   return (
     <>
@@ -27,7 +31,8 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
             to={menuItem.path}
             dropdownItems={menuItem.dropdownItems}
             toggleNavbar={toggleNavbar}
-            seToggleNavbar={seToggleNavbar}
+            setToggleNavbar={setToggleNavbar}
+            closeMobileMenu={closeMobileMenu}
           />
         ))}
       </div>
@@ -41,8 +46,9 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
             to={menuItem.path}
             dropdownItems={menuItem.dropdownItems}
             toggleNavbar={toggleNavbar}
-            seToggleNavbar={seToggleNavbar}
+            setToggleNavbar={setToggleNavbar}
             mobileView={true}
+            closeMobileMenu={closeMobileMenu}
           />
         ))}
       </div>
@@ -50,16 +56,26 @@ const MenuBar = ({ toggleNavbar, seToggleNavbar }) => {
   );
 };
 
-const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, seToggleNavbar, mobileView = false }) => {
+const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, setToggleNavbar, mobileView = false, closeMobileMenu }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const handleToggleDropdown = () => {
+  const handleToggleDropdown = (e) => {
+    e.preventDefault();
     setDropdownOpen(!isDropdownOpen);
-  };
 
-  const handleClick = () => {
-    if (toggleNavbar) {
-      seToggleNavbar(false);
+    if (isDropdownOpen  && mobileView) {
+      navigate("/academic")
+      closeMobileMenu();
+    }
+  };
+  const navigate = useNavigate()
+
+  const handleClick = (e) => {
+    if (dropdownItems && mobileView) {
+      e.preventDefault();
+      handleToggleDropdown(e);
+    } else {
+      closeMobileMenu();
     }
   };
 
@@ -69,11 +85,12 @@ const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, seToggl
         className={`text-dark py-4 px-10 hover:bg-dark hover:text-white cursor-pointer ${isActive ? 'font-bold bg-dark text-white' : ''}`}
         onMouseEnter={!mobileView ? handleToggleDropdown : undefined}
         onMouseLeave={!mobileView ? handleToggleDropdown : undefined}
-        onClick={mobileView ? handleToggleDropdown : handleClick}
-        to={`${to}`}
+        onClick={handleClick}
+        to={to}
       >
         {itemName}
       </Link>
+
       {dropdownItems && (
         <div
           className={`md:absolute w-full left-0 mt-4 bg-blue-900 text-white text-center divide-y ${isDropdownOpen ? 'block' : 'hidden'}`}
@@ -81,8 +98,8 @@ const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, seToggl
           onMouseLeave={!mobileView ? () => setDropdownOpen(false) : undefined}
         >
           {dropdownItems.map((item, index) => (
-            <Link key={index} to={`${to}/${item}`} className="block px-4 py-4 hover:bg-blue-800" onClick={handleClick}>
-              {item}
+            <Link key={index} to={item.path} className="block px-4 py-4 hover:bg-blue-800" onClick={closeMobileMenu}>
+              {item.name}
             </Link>
           ))}
         </div>

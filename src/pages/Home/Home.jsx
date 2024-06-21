@@ -1,7 +1,7 @@
 
 import hero from '../../assets/home/hero.png'
 import MenuBar from '../shared/MenuBar'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -16,6 +16,7 @@ import upcoming from '../../assets/home/upcoming1.png'
 import logo2 from '../../assets/home/logo1.png'
 
 import Header from '../shared/Header'
+import GradientCard from '../../components/GradientCard';
 
 const facaltyDetails = [
   {
@@ -45,18 +46,20 @@ const academicDetails = [
     id: 1,
     title: 'Undergraduates Studies',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    link: "/undergrad"
 
   },
   {
     id: 2,
     title: 'Graduate Studies',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    link: "/graduate"
   },
   {
     id: 3,
     title: 'Training Programs',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-
+    link: "/training-programs"
   }
 ]
 
@@ -124,6 +127,13 @@ const latestNews = [
 ]
 
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleNavigate = (item) => {
+    navigate('/details', { state: { item } });
+  };
+
   return (
     <>
       {/* Header */}
@@ -144,16 +154,16 @@ function Home() {
       <main className='object-contain bg-white' style={{ backgroundImage: `url(${wave})` }}>
 
         {/*  */}
-        <div className=' mission w-[80vw]  mx-auto  flex flex-col md:flex-row gap-10 pt-10 md:pt-56 pb-20  items-center object-contain' style={{ backgroundImage: `url(${wave})` }}>
-          <iframe  src="https://www.youtube.com/embed/rXSWbpUVG3Q?si=yK6E7ARl5aLs9Rxr" title="YouTube video player" frameborder="0" allowfullscreen className='w-[90vw] md:w-1/2 h-[30vh] md:h-[40vh]'></iframe>
+        <div className=' mission w-[90vw] md:w-[80vw]  mx-auto  flex flex-col md:flex-row gap-10 pt-10 md:pt-56 pb-20  items-center object-contain' style={{ backgroundImage: `url(${wave})` }}>
+          <iframe src="https://www.youtube.com/embed/rXSWbpUVG3Q?si=yK6E7ARl5aLs9Rxr" title="YouTube video player" frameborder="0" allowfullscreen className='md:w-[40vw]  h-[30vh] md:h-[40vh]'></iframe>
           <div className=' md:w-1/2 flex flex-col gap-10'>
-            <h1 className='text-2xl md:text-4xl font-bold text-center'>BDU Cyber Physical Mission <br /> and Vision</h1>
+            <h1 className='text-2xl md:text-4xl font-bold text-center text-black'>BDU Cyber Physical Mission <br /> and Vision</h1>
             <p className='text-gray text-center md:text-left'>The Department of Software Engineering will build skilled human resources by conducting up-to-date educational activities through integrated implementation of Face to Face, Blended Learning and Flipped Learning Methods. Under this section, a four-year Bachelor of Science in Software Engineering program compatible with Industry 4.0 has been launched.</p>
           </div>
         </div>
 
         {/* Details of Software and machine */}
-        <div className=' mx-auto  w-[80vw] flex flex-col mb-10 md:my-20'>
+        <div className=' mx-auto  w-[90vw] md:w-[80vw] flex flex-col mb-10 md:my-20'>
           <h1 className='heading text-center pb-10'>Details of Software and machine <br /> Intelligence</h1>
 
           <div className='flex flex-row flex-wrap gap-5 '>
@@ -172,9 +182,8 @@ function Home() {
         </div>
 
         {/* Upcoming Session */}
-
         <div className=' bg-light pt-16 pb-10'>
-          <div className='mx-auto  w-[80vw]'>
+          <div className='mx-auto  w-[90vw] md:w-[80vw]'>
             <h2 className='text-center uppercase text-primary'>Upcoming Session 2023-2024</h2>
             <h1 className='heading text-center mt-4' >Academic Details</h1>
             <div className='flex flex-col md:flex-row gap-5 my-10'>
@@ -188,7 +197,7 @@ function Home() {
                     <div>
                       <p className='text-gray'>{item.description}</p>
                     </div>
-                    <Link to="/" className='text-primary'>{`Learn more >>>`}</Link>
+                    <Link to={item.link} className='text-primary'>{`Learn more >>>`}</Link>
                   </div>
                 ))
               }
@@ -197,71 +206,68 @@ function Home() {
         </div>
 
         {/* Achievements */}
-        <div className=' mx-auto  w-[80vw] pt-16'>
+        <div className=' mx-auto w-[90vw] md:w-[80vw]  pt-16'>
           <h1 className='heading text-center mt-4' >Achievements</h1>
 
           <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           <div className='flex flex-col md:flex-row gap-5 my-10'>
             {
               achievementsData.map((item) => (
-                <div key={item.id} className='md:w-1/3 relative'>
-
-                  <img src={item.image} className='w-full h-full opacity-70 ' />
-                  <div className='p-5 flex flex-col gap-5 justify-center bg-gradient-to-b from-transparent to-[#0B108A] absolute top-1/2 h-1/2'>
-
-                    <h2 className='title text-[#06040A]'>{item.title}</h2>
-
-                    <div>
-                      <p className='text-white text-sm'>{item.description}</p>
-                    </div>
-                  </div>
-                </div>
+                <GradientCard key={item.id} item={item} title={item.title} description={item.description} image={item.image} link={item.link} />
               ))
             }
           </div>
         </div>
 
         {/* Upcoming  Activity*/}
-        <div className='mx-auto  w-[80vw] pt-16'>
+        <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading mt-4' >Upcoming Activity</h1>
           <div className='flex flex-row items-center justify-between'>
             <p className='sub-heading mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <Link to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</Link>
+            <Link to="/notice" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</Link>
           </div>
 
           <div className=' pt-16 flex flex-col md:flex-row gap-x-2 gap-y-10 flex-wrap'>
             {
               upcomingActivity.map((item) => (
-                <div className='md:w-[38vw] flex flex-col md:flex-row gap-2'>
-                  <div className='md:w-1/2  relative'>
-                    <img src={upcoming} className='w-full rounded-md'></img>
-                    <div className='bg-primary w-20 h-20 absolute -right-5 bottom-0 flex items-center p-4'>
-                      <p className='text-white text-center'>8 NOV</p>
+                <Link to="/notice">
+                  <div className='md:w-[38vw] flex flex-col md:flex-row gap-2'>
+                    <div className='md:w-1/2  relative'>
+                      <img src={upcoming} className='w-full rounded-md'></img>
+                      <div className='bg-primary w-20 h-20 absolute -right-5 bottom-0 flex items-center p-4'>
+                        <p className='text-white text-center'>8 NOV</p>
+                      </div>
+                    </div>
+                    <div className='md:w-1/2 p-5 flex flex-col gap-2'>
+                      <h2 className='title text-[#06040A]'>{item.title}</h2>
+                      <p className='text-black text-sm'>{item.description}</p>
                     </div>
                   </div>
-                  <div className='md:w-1/2 p-5 flex flex-col gap-2'>
-                    <h2 className='title text-[#06040A]'>{item.title}</h2>
-                    <p className='text-black text-sm'>{item.description}</p>
-                  </div>
-                </div>
+                </Link>
               ))
             }
           </div>
         </div>
 
         {/* Latest News */}
-        <div className='mx-auto  w-[80vw] pt-16'>
+        <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading mt-4' >Latest News</h1>
           <div className='flex flex-row items-center justify-between'>
             <p className='text-sm text-black mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <NavLink to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white text-sm md:text-ba'>Learn More</NavLink>
+            {/* <NavLink to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white text-sm md:text-ba'>Learn More</NavLink> */}
           </div>
 
-          <div className=' pt-16 flex flex-col md:flex-row gap-6  flex-wrap'>
+          <div className='pt-16 flex flex-col md:flex-row gap-6  flex-wrap'>
             {
               latestNews.map((item, index) => (
-                <div className='md:w-[25vw] flex flex-col gap-2' key={index}>
-                  <img src={item.image} className='w-full rounded-md'></img>
+                <div
+                  key={index}
+                  className='md:w-[25vw] flex flex-col gap-2'
+                  onClick={() => handleNavigate(item)}
+                >
+                  <div className='w-26 h-[250px] overflow-hidden rounded-md flex items-center justify-center'>
+                    <img src={item.image} className='max-w-full max-h-full object-contain rounded-md' />
+                  </div>
 
                   <div className='md:p-5 flex flex-col gap-2'>
                     <p className='text-primary text-sm'>{item.agenda}</p>
@@ -276,16 +282,16 @@ function Home() {
         </div>
 
         {/*  */}
-        <div className='mx-auto  w-[80vw] pt-16'>
+        <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading text-center mt-4' >Industry Collaboration</h1>
 
           <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <div className='flex flex-row justify-between gap-5 my-10 bg-[#081f51] overflow-x-auto'>
-            <img src={logo2} className='py-10'></img>
-            <img src={logo2} className='py-10'></img>
-            <img src={logo2} className='py-10'></img>
-            <img src={logo2} className='py-10'></img>
-            <img src={logo2} className='py-10'></img>
+          <div className='flex flex-row justify-between gap-5 my-10 py-10 bg-[#081f51] overflow-x-auto px-4'>
+            <img src="/assets/home/logo2.png" className='h-16'></img>
+            <img src="assets/home/logo1.png" className='h-16'></img>
+            <img src="assets/home/logo3.png" className='h-16'></img>
+            <img src="assets/home/logo4.png" className='h-16'></img>
+            <img src="assets/home/logo5.png" className='h-16'></img>
           </div>
         </div>
 
