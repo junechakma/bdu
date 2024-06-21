@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <>
-      <div className="pt-2 md:pt-6 w-full flex flex-row z-10">
+      <div className="pt-2 md:pt-6 w-full flex flex-row justify-between z-10">
         <div className='py-3 md:w-1/2 pl-4 md:pl-[10vw]'>
           <Link to="/">
             <img src={logo1} className='h-12 md:h-20' />
@@ -31,7 +31,7 @@ function Header() {
           </div>
         </div>
 
-        <div className='block md:hidden self-start'>
+        <div className='block md:hidden self-start pr-2'>
           {
             !toggleNavbar ? <IoMdMenu color='black' size={32} onClick={() => setToggleNavbar(!toggleNavbar)} /> : <IoMdClose color='black' size={32} onClick={() => setToggleNavbar(!toggleNavbar)} />
           }

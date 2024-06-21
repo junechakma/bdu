@@ -140,12 +140,13 @@ function Home() {
       {/* Hero Image */}
       <div className="relative h-[30vh] md:h-[80vh] bg-cover bg-center " style={{ backgroundImage: `url(${hero})` }} >
         <div className="absolute w-full md:w-1/2 h-1/2 md:h-full bottom-0 bg-gradient-to-t md:bg-gradient-to-r from-black to-transparent"></div>
-        <div className="absolute bottom-0 w-full md:w-1/2  md:top-1/2 md:-translate-y-1/2  md:left-[10vw] text-white md:font-bold md:text-2xl flex md:block flex-col justify-center items-center">
-          <p className='text-xl md:text-6xl font-bold mb-5 tracking-wide leading-snug text-center md:text-left'>
-            Welcome to the <br /> future educations systems
+        <div className="absolute bottom-0 w-full md:w-1/2  md:top-1/2 md:-translate-y-1/2  md:left-[10vw] text-white md:font-bold md:text-2xl flex md:flex md:flex-col md:items-center md flex-col justify-center items-center ">
+          <p className='md:self-start text-xl md:text-6xl font-bold mb-5 tracking-wide leading-snug text-center md:text-left'>
+            Welcome to the <br /> future educations
+            <br /> systems
           </p>
 
-          <Link to="/" className='text-sm  items-center bg-blue-800 p-1 rounded-md mb-2 inline-flex'>Learn More <IoIosArrowRoundForward size={26} /></Link>
+          <Link to="/about" className=' md:self-start text-sm  items-center bg-blue-800 p-1 rounded-md mb-2 inline-flex'>Learn More <IoIosArrowRoundForward size={26} /></Link>
         </div>
       </div>
 

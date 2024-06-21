@@ -22,7 +22,7 @@ const MenuBar = ({ toggleNavbar, setToggleNavbar }) => {
 
   return (
     <>
-      <div className="my-4 w-[80vw] mx-auto md:flex gap-0 flex-row justify-between py-0 hidden">
+      <div className="mb-4 w-[80vw] mx-auto md:flex gap-0 flex-row justify-between py-0 hidden">
         {menuItems.map((menuItem) => (
           <MenuItem
             key={menuItem.name}
@@ -37,7 +37,7 @@ const MenuBar = ({ toggleNavbar, setToggleNavbar }) => {
         ))}
       </div>
 
-      <div className={`absolute bg-white flex md:hidden flex-col gap-10 py-10 w-1/2 z-20 ${toggleNavbar ? "right-0 duration-300 shadow-xl" : "-right-1/2 duration-300 hidden"}`}>
+      <div className={`absolute bg-white flex md:hidden flex-col  py-10 w-1/2 z-20 ${toggleNavbar ? "right-0 duration-300 shadow-xl" : "-right-1/2 duration-300 hidden"}`}>
         {menuItems.map((menuItem) => (
           <MenuItem
             key={menuItem.name}
@@ -80,9 +80,9 @@ const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, setTogg
   };
 
   return (
-    <div className="relative z-20">
+    <div className="w-full relative z-20">
       <Link
-        className={`text-dark py-4 px-10 hover:bg-dark hover:text-white cursor-pointer ${isActive ? 'font-bold bg-dark text-white' : ''}`}
+        className={`text-dark block py-4 px-10 hover:bg-dark hover:text-white w-full cursor-pointer ${isActive ? 'font-bold bg-dark text-white' : ''}`}
         onMouseEnter={!mobileView ? handleToggleDropdown : undefined}
         onMouseLeave={!mobileView ? handleToggleDropdown : undefined}
         onClick={handleClick}
@@ -93,7 +93,7 @@ const MenuItem = ({ itemName, isActive, to, dropdownItems, toggleNavbar, setTogg
 
       {dropdownItems && (
         <div
-          className={`md:absolute w-full left-0 mt-4 bg-blue-900 text-white text-center divide-y ${isDropdownOpen ? 'block' : 'hidden'}`}
+          className={`md:absolute w-full left-0 bg-blue-900 text-white text-center divide-y ${isDropdownOpen ? 'block' : 'hidden'}`}
           onMouseEnter={!mobileView ? () => setDropdownOpen(true) : undefined}
           onMouseLeave={!mobileView ? () => setDropdownOpen(false) : undefined}
         >
