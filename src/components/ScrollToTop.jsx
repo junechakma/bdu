@@ -8,7 +8,7 @@ const ScrollToTop = ({ children }) => {
     window.scrollTo(0, 0);
   }, [location]);
 
-  return children;
+  return <>{children}</>;
 };
 
 export default ScrollToTop;
