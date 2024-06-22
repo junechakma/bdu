@@ -24,12 +24,12 @@ function TopBar() {
                         </div>
 
                         <div className='flex flex-row pt-5 justify-between'>
-                            <ul className='flex flex-col md:flex-row pl-5 gap-x-5 text-dark text-lg'>
+                            <ul className='flex flex-col md:flex-row pl-5 gap-x-5 text-dark md:text-lg'>
                                 <Link to="https://bdu.ac.bd/">BDU Website</Link>
                                 <Link to="https://moodle.bdu.ac.bd/login/" >Moodle</Link>
                                 <Link to="https://ums.bdu.ac.bd/">UMS</Link>
                             </ul>
-                            <p className='hidden md:block text-lg'>Faculty of Software and Machine Intelligence</p>
+                            <p className='hidden md:block text-lg'>Department of Internet of Things and Robotics Engineering </p>
                         </div>
                     </div>
                 </div>

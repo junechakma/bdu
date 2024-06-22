@@ -10,13 +10,11 @@ function GradientCard({ item}) {
     return (
         <div onClick={() => handleNavigate(item)}  className='h-72 md:w-1/3 relative rounded-xl overflow-hidden'>
             <img src={ item.image} className='w-full h-full object-cover opacity-70 rounded-xl' />
-            <div className='p-5 flex flex-col gap-2 md:gap-5 justify-center bg-gradient-to-b from-transparent to-[#0B108A] absolute bottom-0  md:top-1/2 '>
+            <div className='p-5 flex flex-col gap-2 md:gap-3 justify-center bg-gradient-to-b from-transparent to-[#0B108A] absolute bottom-0  md:top-1/2 '>
 
                 <h2 className='title text-[#06040A]'>{ item.title}</h2>
-                <p className='text-white text-sm'>{ item.description}</p>
+                <p className='text-white text-sm'>{ item.description.slice(0,130)+"..."}</p>
 
-                {/* <div className='mb-16 md:mb-0'>
-                </div> */}
             </div>
         </div >
 

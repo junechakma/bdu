@@ -14,7 +14,7 @@ function Header() {
           <Link to="/">
             <img src={logo1} className='h-12 md:h-20' />
           </Link>
-          <p className='text-black pt-2 text-sm md:text-lg'>Department of Cyber Physical System</p>
+          <p className='text-black pt-2 text-sm md:text-lg'>Faculty of Cyber Physical Systems</p>
         </div>
         <div className='hidden md:flex flex-col pt-10 md:justify-between py-3 w-full md:pr-[10vw] '>
           <div className='flex justify-end relative '>
@@ -27,7 +27,7 @@ function Header() {
           </div>
 
           <div className='flex flex-row pt-5 justify-end'>
-            <p className='text-sm md:text-lg'>Faculty of Software and Machine Intelligence</p>
+            <p className='text-sm md:text-lg'>Department of Internet of Things and Robotics Engineering </p>
           </div>
         </div>
 

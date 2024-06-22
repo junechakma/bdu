@@ -1,31 +1,46 @@
 import { Link } from "react-router-dom"
+import axios from 'axios'
+import { useState } from "react";
+
+const notice = [
+    {
+        id: 1,
+        title: 'Bangladesh Chair: Bangabandhu Sheikh Mujibur Rahman Professorial Fellowship',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        date: "8 NOV"
+    }, {
+        id: 2,
+        title: 'একাডেমিক বকেয়া পরিশোধের বিজ্ঞপ্তি',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        date: "8 NOV"
+    },
+    {
+        id: 3,
+        title: 'Class Routine of Department of Educational Technology (EDTECH) 2023',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        date: "8 NOV"
+    }, {
+        id: 4,
+        title: 'Office Order for Hall Seat Rent',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        date: "8 NOV"
+    },
+]
 
 
-    const notice = [
-        {
-            id: 1,
-            title: 'Bangladesh Chair: Bangabandhu Sheikh Mujibur Rahman Professorial Fellowship',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            date: "8 NOV"
-        }, {
-            id: 2,
-            title: 'একাডেমিক বকেয়া পরিশোধের বিজ্ঞপ্তি',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            date: "8 NOV"
-        },
-        {
-            id: 3,
-            title: 'Class Routine of Department of Educational Technology (EDTECH) 2023',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            date: "8 NOV"
-        }, {
-            id: 4,
-            title: 'Office Order for Hall Seat Rent',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            date: "8 NOV"
-        },
-    ]
 function Notice() {
+
+
+    const [notices, setNotices] = useState([]);
+    const fetchNotices = async () => {
+        try {
+            const response = await axios.get('https://bdu-swe-dept.vercel.app/all-notice');
+            setNotices(response.data);
+            console.log(response.data);
+        } catch (error) {
+            console.error('Error fetching notices:', error);
+        }
+    };
 
 
     const colors = ['bg-orange-400', 'bg-red-400', 'bg-green-400', 'bg-blue-400', 'bg-yellow-400', 'bg-purple-400'];

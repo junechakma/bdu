@@ -8,11 +8,11 @@ import ScrollToTop from '../components/ScrollToTop'
 function Index() {
   return (
     <>
-    <ScrollToTop />
-    <TopBar/>
-    <Header/>
-    <Outlet></Outlet>
-    <Footer/>
+      <ScrollToTop />
+      <TopBar />
+      <Header />
+      <Outlet></Outlet>
+      <Footer />
     </>
   )
 }

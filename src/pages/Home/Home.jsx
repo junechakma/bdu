@@ -22,22 +22,22 @@ const facaltyDetails = [
   {
     id: 1,
     title: 'Faculty',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: "To develop innovative technologies, products, and services that cater to the global market's needs and contribute to the growth of international businesses. "
   },
   {
     id: 2,
     title: 'Mission and Vision',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: "To contribute to the national market and government sector by driving advancements in diverse sectors while working towards the achievement of industry 4.0 and 5.0 goals through efficient, productive, and sustainable implementations. "
   },
   {
     id: 3,
     title: 'Office and Stuff',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: "To foster continuous research, innovation, and lifelong learning, pushing the boundaries of technology by engaging in cutting-edge research and staying updated with the latest advancements, tools, and methodologies to address emerging challenges. "
   },
   {
     id: 4,
     title: 'History',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: "To accelerate industry progress with IoT and Robotics integration for enhanced productivity and efficiency. "
   }
 ]
 
@@ -45,20 +45,20 @@ const academicDetails = [
   {
     id: 1,
     title: 'Undergraduates Studies',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    description: "The Faculty of Cyber Physical Systems of this University currently offers a four-year bachelor's (honors) degree under the Department of Internet of Things and Robotics Engineering. This faculty has been established with the aim of creating skilled human resources suitable for the Fourth Industrial Revolution.",
     link: "/undergrad"
 
   },
   {
     id: 2,
     title: 'Graduate Studies',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    description: "Embark on an advanced academic journey with our Graduate Studies in Cyber Physical Systems at BDU. Our program is designed to equip students with cutting-edge knowledge and practical skills in integrating cyber and physical components to address complex industry challenges. ",
     link: "/graduate"
   },
   {
     id: 3,
     title: 'Training Programs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    description: "Join us at BDU to advance your career and contribute to the future of Cyber Physical Systems. Apply now to be part of a dynamic and innovative community dedicated to pushing the boundaries of technology. ",
     link: "/training-programs"
   }
 ]
@@ -66,19 +66,20 @@ const academicDetails = [
 const achievementsData = [
   {
     id: 1,
-    title: 'Robo Tech Olympiad 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: "BDU's Robo Pulse Competes in IEEE R10 Finals in Bangkok ",
+    description: "Students from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) have successfully developed an advanced autonomous rover, EcoRover designed for environmental monitoring and management. This innovative project showcases the technical expertise and forward-thinking mindset of BDU's IoT and Robotics Engineering Department. The EcoRover autonomously navigates diverse terrains, collects environmental data, and performs tasks crucial for conservation efforts. Equipped with cutting-edge sensors, artificial intelligence (AI), and machine learning (ML) algorithms, the rover ensures precise and reliable operations. The EcoRover features advanced navigation capabilities using LiDAR, GPS, and ultrasonic sensors for obstacle detection and path planning, enhanced by AI-driven algorithms for real-time decision-making. It excels in environmental monitoring by measuring air and water quality, temperature, humidity, and other parameters, while also identifying pollutants in water bodies and providing remediation recommendations. Its robust all-terrain design allows it to operate in urban, rural, and remote areas, built with durable materials to withstand harsh conditions. For communication and control, the rover offers remote monitoring through wireless data transmission to a centralized system and includes a user-friendly interface for remote operation and data visualization. The EcoRover has versatile applications in climate change mitigation, water management, disaster response, and agriculture, providing valuable data for climate research, environmental assessments, and agricultural productivity. Developed with support from Bangladesh’s leading electronics manufacturer Walton and in collaboration with industry experts and academic mentors from BDU, the EcoRover will be showcased at various national and international platforms. The development team plans to enhance its capabilities further, integrating more advanced AI features and expanding its environmental monitoring functions. This project underscores BDU's commitment to fostering innovation, research, and practical problem-solving skills among its students, preparing them to tackle future challenges with cutting-edge technology. ",
     image: './assets/home/achievement1.png'
-  }, {
+  },
+  {
     id: 2,
-    title: 'Graduated Programs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: "BDU Students Develop Autonomous Rover ",
+    description: "Students from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) have successfully developed an advanced autonomous rover, EcoRover, designed for environmental monitoring and management. This innovative project showcases the technical expertise and forward-thinking mindset of BDU's IoT and Robotics Engineering Department. The EcoRover autonomously navigates diverse terrains, collects environmental data, and performs tasks crucial for conservation efforts. Equipped with cutting-edge sensors, artificial intelligence (AI), and machine learning (ML) algorithms, the rover ensures precise and reliable operations. The EcoRover features advanced navigation capabilities using LiDAR, GPS, and ultrasonic sensors for obstacle detection and path planning, enhanced by AI-driven algorithms for real-time decision-making. It excels in environmental monitoring by measuring air and water quality, temperature, humidity, and other parameters, while also identifying pollutants in water bodies and providing remediation recommendations. Its robust all-terrain design allows it to operate in urban, rural, and remote areas, built with durable materials to withstand harsh conditions. For communication and control, the rover offers remote monitoring through wireless data transmission to a centralized system and includes a user-friendly interface for remote operation and data visualization. The EcoRover has versatile applications in climate change mitigation, water management, disaster response, and agriculture, providing valuable data for climate research, environmental assessments, and agricultural productivity. Developed with support from Bangladesh’s leading electronics manufacturer Walton and in collaboration with industry experts and academic mentors from BDU, the EcoRover will be showcased at various national and international platforms. The development team plans to enhance its capabilities further, integrating more advanced AI features and expanding its environmental monitoring functions. This project underscores BDU's commitment to fostering innovation, research, and practical problem-solving skills among its students, preparing them to tackle future challenges with cutting-edge technology. ",
     image: './assets/home/achievement2.png'
   },
   {
     id: 3,
-    title: 'Robo Tech Olympiad 2022',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: "1st Runner up Robo Tech Olympiad 2022 ",
+    description: "In 2022, a team from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) achieved the prestigious accolade of 1st Runner-Up in the Robo Tech Olympiad. The competition, renowned for its rigorous challenges and innovation in robotics, saw BDU's team demonstrate exceptional technical skill and problem-solving abilities. Led by dedicated students from the IoT and Robotics Engineering Department, the team showcased their expertise in designing and programming robots to meet complex tasks and challenges presented during the Olympiad. Their achievement not only highlights the high caliber of education and mentorship provided at BDU but also underscores the university's commitment to nurturing talent in emerging technologies. The accolade further solidifies BDU's reputation as a leading institution fostering innovation and excellence in robotics and related fields, setting a benchmark for future competitions and inspiring students to continue pushing the boundaries of technological innovation. ",
     image: './assets/home/achievement3.png'
   }
 ]
@@ -142,8 +143,7 @@ function Home() {
         <div className="absolute w-full md:w-1/2 h-1/2 md:h-full bottom-0 bg-gradient-to-t md:bg-gradient-to-r from-black to-transparent"></div>
         <div className="absolute bottom-0 w-full md:w-1/2  md:top-1/2 md:-translate-y-1/2  md:left-[10vw] text-white md:font-bold md:text-2xl flex md:flex md:flex-col md:items-center md flex-col justify-center items-center ">
           <p className='md:self-start text-xl md:text-6xl font-bold mb-5 tracking-wide leading-snug text-center md:text-left'>
-            Welcome to the <br /> future educations
-            <br /> systems
+            Welcome to the  <br /> future  education  systems in IRE
           </p>
 
           <Link to="/about" className=' md:self-start text-sm  items-center bg-blue-800 p-1 rounded-md mb-2 inline-flex'>Learn More <IoIosArrowRoundForward size={26} /></Link>
@@ -159,13 +159,13 @@ function Home() {
           <iframe src="https://www.youtube.com/embed/rXSWbpUVG3Q?si=yK6E7ARl5aLs9Rxr" title="YouTube video player" frameborder="0" allowfullscreen className='md:w-[40vw]  h-[30vh] md:h-[40vh]'></iframe>
           <div className=' md:w-1/2 flex flex-col gap-10'>
             <h1 className='text-2xl md:text-4xl font-bold text-center text-black'>BDU Cyber Physical Mission <br /> and Vision</h1>
-            <p className='text-gray text-center md:text-left'>The Department of Software Engineering will build skilled human resources by conducting up-to-date educational activities through integrated implementation of Face to Face, Blended Learning and Flipped Learning Methods. Under this section, a four-year Bachelor of Science in Software Engineering program compatible with Industry 4.0 has been launched.</p>
+            <p className='text-gray text-center md:text-left'>The mission of BDU Cyber Physical Systems is to advance the frontiers of technology by integrating cyber and physical systems to solve complex, real-world problems. We are dedicated to fostering innovation, enhancing security, and improving efficiency through cutting-edge research, interdisciplinary collaboration, and the development of highly skilled professionals. Our vision is to be a global leader in Cyber Physical Systems, driving technological innovation and shaping a future where seamlessly integrated cyber and physical systems enhance the quality of life, ensure sustainable development, and provide robust solutions to the challenges of tomorrow. </p>
           </div>
         </div>
 
         {/* Details of Software and machine */}
         <div className=' mx-auto  w-[90vw] md:w-[80vw] flex flex-col mb-10 md:my-20'>
-          <h1 className='heading text-center pb-10'>Details of Software and machine <br /> Intelligence</h1>
+          <h1 className='heading text-center pb-10'>The Scope of IoT and Robotics Engineering </h1>
 
           <div className='flex flex-row flex-wrap gap-5 '>
             {
@@ -173,8 +173,8 @@ function Home() {
                 <div key={item.id} className='flex flex-row gap-5 md:w-[39vw] p-6 hover:shadow-md rounded-lg'>
                   <img src={icon1} className='w-12 h-12 md:w-16 md:h-16' />
                   <div className='flex flex-col gap-2'>
-                    <h2 className='text-lg'>{item.title}</h2>
-                    <p className='text-gray text-sm md:text-base'>{item.description}</p>
+                    {/* <h2 className='text-lg'>{item.title}</h2> */}
+                    <p className='text-gray text-sm md:text-base text-justify'>{item.description}</p>
                   </div>
                 </div>
               ))
