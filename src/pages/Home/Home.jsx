@@ -53,7 +53,7 @@ const academicDetails = [
     id: 2,
     title: 'Graduate Studies',
     description: "Embark on an advanced academic journey with our Graduate Studies in Cyber Physical Systems at BDU. Our program is designed to equip students with cutting-edge knowledge and practical skills in integrating cyber and physical components to address complex industry challenges. ",
-    link: "/graduate"
+    link: "/postgrad"
   },
   {
     id: 3,
@@ -66,62 +66,70 @@ const academicDetails = [
 const achievementsData = [
   {
     id: 1,
-    title: "BDU's Robo Pulse Competes in IEEE R10 Finals in Bangkok ",
-    description: "Students from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) have successfully developed an advanced autonomous rover, EcoRover designed for environmental monitoring and management. This innovative project showcases the technical expertise and forward-thinking mindset of BDU's IoT and Robotics Engineering Department. The EcoRover autonomously navigates diverse terrains, collects environmental data, and performs tasks crucial for conservation efforts. Equipped with cutting-edge sensors, artificial intelligence (AI), and machine learning (ML) algorithms, the rover ensures precise and reliable operations. The EcoRover features advanced navigation capabilities using LiDAR, GPS, and ultrasonic sensors for obstacle detection and path planning, enhanced by AI-driven algorithms for real-time decision-making. It excels in environmental monitoring by measuring air and water quality, temperature, humidity, and other parameters, while also identifying pollutants in water bodies and providing remediation recommendations. Its robust all-terrain design allows it to operate in urban, rural, and remote areas, built with durable materials to withstand harsh conditions. For communication and control, the rover offers remote monitoring through wireless data transmission to a centralized system and includes a user-friendly interface for remote operation and data visualization. The EcoRover has versatile applications in climate change mitigation, water management, disaster response, and agriculture, providing valuable data for climate research, environmental assessments, and agricultural productivity. Developed with support from Bangladesh’s leading electronics manufacturer Walton and in collaboration with industry experts and academic mentors from BDU, the EcoRover will be showcased at various national and international platforms. The development team plans to enhance its capabilities further, integrating more advanced AI features and expanding its environmental monitoring functions. This project underscores BDU's commitment to fostering innovation, research, and practical problem-solving skills among its students, preparing them to tackle future challenges with cutting-edge technology. ",
-    image: './assets/home/achievement1.png'
+    title: "BDU's Robo Pulse Competes in IEEE R10 Finals in Bangkok",
+    description: "Students from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) have successfully developed an advanced autonomous rover, EcoRover designed for environmental monitoring and management.\n\nThis innovative project showcases the technical expertise and forward-thinking mindset of BDU's IoT and Robotics Engineering Department. The EcoRover autonomously navigates diverse terrains, collects environmental data, and performs tasks crucial for conservation efforts.\n\nEquipped with cutting-edge sensors, artificial intelligence (AI), and machine learning (ML) algorithms, the rover ensures precise and reliable operations. The EcoRover features advanced navigation capabilities using LiDAR, GPS, and ultrasonic sensors for obstacle detection and path planning, enhanced by AI-driven algorithms for real-time decision-making.\n\nIt excels in environmental monitoring by measuring air and water quality, temperature, humidity, and other parameters, while also identifying pollutants in water bodies and providing remediation recommendations.\n\nIts robust all-terrain design allows it to operate in urban, rural, and remote areas, built with durable materials to withstand harsh conditions. For communication and control, the rover offers remote monitoring through wireless data transmission to a centralized system and includes a user-friendly interface for remote operation and data visualization.\n\nThe EcoRover has versatile applications in climate change mitigation, water management, disaster response, and agriculture, providing valuable data for climate research, environmental assessments, and agricultural productivity.\n\nDeveloped with support from Bangladesh’s leading electronics manufacturer Walton and in collaboration with industry experts and academic mentors from BDU, the EcoRover will be showcased at various national and international platforms. The development team plans to enhance its capabilities further, integrating more advanced AI features and expanding its environmental monitoring functions.\n\nThis project underscores BDU's commitment to fostering innovation, research, and practical problem-solving skills among its students, preparing them to tackle future challenges with cutting-edge technology.",
+    image: './assets/all/3.jpg'
   },
   {
     id: 2,
-    title: "BDU Students Develop Autonomous Rover ",
-    description: "Students from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) have successfully developed an advanced autonomous rover, EcoRover, designed for environmental monitoring and management. This innovative project showcases the technical expertise and forward-thinking mindset of BDU's IoT and Robotics Engineering Department. The EcoRover autonomously navigates diverse terrains, collects environmental data, and performs tasks crucial for conservation efforts. Equipped with cutting-edge sensors, artificial intelligence (AI), and machine learning (ML) algorithms, the rover ensures precise and reliable operations. The EcoRover features advanced navigation capabilities using LiDAR, GPS, and ultrasonic sensors for obstacle detection and path planning, enhanced by AI-driven algorithms for real-time decision-making. It excels in environmental monitoring by measuring air and water quality, temperature, humidity, and other parameters, while also identifying pollutants in water bodies and providing remediation recommendations. Its robust all-terrain design allows it to operate in urban, rural, and remote areas, built with durable materials to withstand harsh conditions. For communication and control, the rover offers remote monitoring through wireless data transmission to a centralized system and includes a user-friendly interface for remote operation and data visualization. The EcoRover has versatile applications in climate change mitigation, water management, disaster response, and agriculture, providing valuable data for climate research, environmental assessments, and agricultural productivity. Developed with support from Bangladesh’s leading electronics manufacturer Walton and in collaboration with industry experts and academic mentors from BDU, the EcoRover will be showcased at various national and international platforms. The development team plans to enhance its capabilities further, integrating more advanced AI features and expanding its environmental monitoring functions. This project underscores BDU's commitment to fostering innovation, research, and practical problem-solving skills among its students, preparing them to tackle future challenges with cutting-edge technology. ",
-    image: './assets/home/achievement2.png'
+    title: "BDU Students Develop Autonomous Rover",
+    description: "Students from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) have successfully developed an advanced autonomous rover, EcoRover, designed for environmental monitoring and management.\n\nThis innovative project showcases the technical expertise and forward-thinking mindset of BDU's IoT and Robotics Engineering Department. The EcoRover autonomously navigates diverse terrains, collects environmental data, and performs tasks crucial for conservation efforts.\n\nEquipped with cutting-edge sensors, artificial intelligence (AI), and machine learning (ML) algorithms, the rover ensures precise and reliable operations. The EcoRover features advanced navigation capabilities using LiDAR, GPS, and ultrasonic sensors for obstacle detection and path planning, enhanced by AI-driven algorithms for real-time decision-making.\n\nIt excels in environmental monitoring by measuring air and water quality, temperature, humidity, and other parameters, while also identifying pollutants in water bodies and providing remediation recommendations.\n\nIts robust all-terrain design allows it to operate in urban, rural, and remote areas, built with durable materials to withstand harsh conditions. For communication and control, the rover offers remote monitoring through wireless data transmission to a centralized system and includes a user-friendly interface for remote operation and data visualization.\n\nThe EcoRover has versatile applications in climate change mitigation, water management, disaster response, and agriculture, providing valuable data for climate research, environmental assessments, and agricultural productivity.\n\nDeveloped with support from Bangladesh’s leading electronics manufacturer Walton and in collaboration with industry experts and academic mentors from BDU, the EcoRover will be showcased at various national and international platforms. The development team plans to enhance its capabilities further, integrating more advanced AI features and expanding its environmental monitoring functions.\n\nThis project underscores BDU's commitment to fostering innovation, research, and practical problem-solving skills among its students, preparing them to tackle future challenges with cutting-edge technology.",
+    image: './assets/all/2.jpg'
   },
   {
     id: 3,
-    title: "1st Runner up Robo Tech Olympiad 2022 ",
-    description: "In 2022, a team from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) achieved the prestigious accolade of 1st Runner-Up in the Robo Tech Olympiad. The competition, renowned for its rigorous challenges and innovation in robotics, saw BDU's team demonstrate exceptional technical skill and problem-solving abilities. Led by dedicated students from the IoT and Robotics Engineering Department, the team showcased their expertise in designing and programming robots to meet complex tasks and challenges presented during the Olympiad. Their achievement not only highlights the high caliber of education and mentorship provided at BDU but also underscores the university's commitment to nurturing talent in emerging technologies. The accolade further solidifies BDU's reputation as a leading institution fostering innovation and excellence in robotics and related fields, setting a benchmark for future competitions and inspiring students to continue pushing the boundaries of technological innovation. ",
+    title: "1st Runner up Robo Tech Olympiad 2022",
+    description: "In 2022, a team from Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) achieved the prestigious accolade of 1st Runner-Up in the Robo Tech Olympiad.\n\nThe competition, renowned for its rigorous challenges and innovation in robotics, saw BDU's team demonstrate exceptional technical skill and problem-solving abilities. Led by dedicated students from the IoT and Robotics Engineering Department, the team showcased their expertise in designing and programming robots to meet complex tasks and challenges presented during the Olympiad.\n\nTheir achievement not only highlights the high caliber of education and mentorship provided at BDU but also underscores the university's commitment to nurturing talent in emerging technologies.\n\nThe accolade further solidifies BDU's reputation as a leading institution fostering innovation and excellence in robotics and related fields, setting a benchmark for future competitions and inspiring students to continue pushing the boundaries of technological innovation.",
     image: './assets/home/achievement3.png'
   }
 ]
 const upcomingActivity = [
   {
     id: 1,
-    title: 'IRAB Education Expo 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: 'IRAB Education Expo 2024',
+    description: 'Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) is excited to host the IRAB Education Expo 2024 from August 15-17, 2024, on the BDU campus. ',
+    image: './assets/all/4.jpg',
+    date: '22 June'
   }, {
     id: 2,
     title: 'IoT Present Cultural Night',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    description: 'Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) is thrilled to announce the upcoming IoT Present Cultural Night, a vibrant celebration of culture, technology, and community. ',
+    image: './assets/all/5.jpg',
+    date: '10 June'
   },
   {
     id: 3,
-    title: 'IRAB Education Expo 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: ' IRE Fest  – 2024',
+    description: 'Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) proudly presents IRE Fest 2024, an exciting and comprehensive festival celebrating innovation, research, and education.',
+    image: './assets/all/6.png',
+    date: '11 June'
   }, {
     id: 4,
-    title: 'IoT Present Cultural Night',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: 'Robo Tech Olympiad 2024 ',
+    description: 'Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) is excited to announce the Robo Tech Olympiad 2024, a premier robotics competition that brings together talented students.',
+    image: './assets/all/7.jpg',
+    date: '7 June'
   },
 ]
 
 const latestNews = [
   {
     id: 1,
-    title: 'Atomic clocks could detect exotic low-mass fields from merging black holes',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'মাননীয় প্রধানমন্ত্রীর শিক্ষা ও সংস্কৃতিবিষয়ক উপদেষ্টার সঙ্গে বিডিইউ উপাচার্যের সৌজন্য সাক্ষাৎ',
+    description: "মাননীয় প্রধানমন্ত্রীর শিক্ষা ও সংস্কৃতিবিষয়ক উপদেষ্টার সঙ্গে বিডিইউ উপাচার্যের সৌজন্য সাক্ষাৎমাননীয় প্রধানমন্ত্রীর শিক্ষা ও সংস্কৃতিবিষয়ক উপদেষ্টা ড. কামাল আবদুল নাসের চৌধুরীর সঙ্গে সৌজন্য সাক্ষাৎ করেছেন বঙ্গবন্ধু শেখ মুজিবুর রহমান ডিজিটাল ইউনিভার্সিটি, বাংলাদেশ এর মাননীয় উপাচার্য অধ্যাপক ড.  মুহাম্মদ  মাহফুজুল ইসলাম, পিইঞ্জ।\n\nমঙ্গলবার  (২১ মে) মাননীয় প্রধানমন্ত্রীর শিক্ষা ও সংস্কৃতিবিষয়ক উপদেষ্টার কার্যালয়ে এ সৌজন্য সাক্ষাৎ  করেন তিনি। \n\nএ সময় বঙ্গবন্ধু শেখ মুজিবুর রহমান ডিজিটাল ইউনিভার্সিটি, বাংলাদেশ এর মাননীয় উপ-উপাচার্য অধ্যাপক ড. মো: মাহবুবুল আলম জোয়ার্দার ও মাননীয় ট্রেজারার অধ্যাপক ড. মো: আনোয়ার হোসেন উপস্থিত ছিলেন।\n\nএ সময় মাননীয় উপাচার্য অধ্যাপক ড.  মুহাম্মদ  মাহফুজুল ইসলাম, পিইঞ্জ বিশ্ববিদ্যালয়ের মাস্টার প্ল্যান,কারিকুলাম,একাডেমিক কার্যক্রমসহ সার্বিক বিষয়ে মাননীয় \n\nশিক্ষা ও সংস্কৃতিবিষয়ক উপদেষ্টা ড. কামাল আবদুল নাসের চৌধুরীরকে অবহিত করেন।\n\nমাননীয় উপদেষ্টা বিশ্ববিদ্যালয়ের সার্বিক অগ্রগতিতে সন্তোষ প্রকাশ করেন |",
     agenda: 'Event',
-    image: './assets/home/latest1.png'
+    image: './assets/all/8.jpg'
   }, {
     id: 2,
-    title: '9,000-Year-Old Grave of a Female Hunter in Peru Shows Women Tackled Big Game',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: 'New Course Offering: Software Engineering at BDU',
+    description: "Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) is thrilled to announce the launch of a new course in Software Engineering, aimed at equipping students with comprehensive knowledge and practical skills essential for thriving in the fast-evolving field of software development.\n\nCourse Overview:\n1. Core Subjects:\nFundamentals of Software Engineering: Introduction to the principles and methodologies of software engineering, covering the entire software development lifecycle.\n\nProgramming Languages: In-depth study of popular programming languages such as Java, Python, and C++, focusing on writing efficient and effective code.\n\nSoftware Design and Architecture: Exploration of software design patterns, architectural styles, and best practices for building scalable and maintainable systems.\n\n2. Advanced Topics:\nSoftware Testing and Quality Assurance: Techniques and tools for ensuring the reliability and quality of software products through rigorous testing and validation processes.\n\nAgile Methodologies: Emphasis on Agile frameworks like Scrum and Kanban, promoting adaptive planning, iterative development, and continuous improvement.\n\nDevOps and Continuous Integration/Continuous Deployment (CI/CD): Understanding the integration of development and operations, automation of software delivery, and deployment pipelines.\n\n3. Practical Experience:\nHands-On Projects: Real-world projects and case studies that enable students to apply theoretical knowledge to practical scenarios, fostering critical thinking and problem-solving skills.\n\nInternships and Industry Collaborations: Opportunities for students to gain practical experience through internships with leading tech companies and collaborative projects with industry partners.\n\n4. Career Opportunities:\nJob Readiness: The course is designed to prepare students for successful careers in software development, systems analysis, software project management, and other related fields.\n\nNetworking and Mentorship: Access to a network of industry professionals, alumni, and mentors to guide students in their career paths and professional development.\n\nThe Software Engineering course at BDU aims to create proficient software engineers who are well-versed in the latest technologies and methodologies, ready to meet the demands of the global job market. Enrollment is now open, and we invite all aspiring software engineers to join this exciting new program and embark on a journey towards a successful career in software engineering.",
     agenda: 'New Course Open',
     image: './assets/home/latest2.png'
   },
   {
     id: 3,
-    title: 'Emilly Borthwick-Wong promoted to executive director of undergradu...',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+    title: 'IRE Department Successfully Completes Annual Picnic',
+    description: "The Internet of Things and Robotics Engineering (IRE) Department at Bangabandhu Sheikh Mujibur Rahman Digital University (BDU) recently organized a successful annual picnic, creating a memorable experience for students, faculty, and staff. Held on June 15, 2024, at the picturesque Gazipur National Park, the event was a delightful blend of relaxation, team-building activities, and fun.\n\nParticipants enjoyed a day filled with various recreational activities, including outdoor games, a nature hike, and a boat ride. The picnic provided an excellent opportunity for everyone to unwind, socialize, and strengthen the sense of community within the department.\n\nThe event also featured a delicious buffet lunch with a variety of local and international cuisines, ensuring that everyone's taste preferences were catered to. The IRE Department's faculty members organized a series of team-building exercises that encouraged collaboration, problem-solving, and camaraderie among students and staff.\n\nThe success of the annual picnic highlights the department's commitment to fostering a balanced and supportive environment for both academic and extracurricular activities. The IRE Department at BDU continues to prioritize the well-being and holistic development of its community, ensuring that students and staff alike have opportunities to bond, relax, and create lasting memories.",
     agenda: 'Picnic',
     image: './assets/home/latest3.png'
   }
@@ -170,13 +178,13 @@ function Home() {
           <div className='flex flex-row flex-wrap gap-5 '>
             {
               facaltyDetails.map((item) => (
-                <div key={item.id} className='flex flex-row gap-5 md:w-[39vw] p-6 hover:shadow-md rounded-lg'>
+                <Link to="/about" key={item.id} className='flex flex-row gap-5 md:w-[39vw] p-6 hover:shadow-md rounded-lg'>
                   <img src={icon1} className='w-12 h-12 md:w-16 md:h-16' />
                   <div className='flex flex-col gap-2'>
                     {/* <h2 className='text-lg'>{item.title}</h2> */}
                     <p className='text-gray text-sm md:text-base text-justify'>{item.description}</p>
                   </div>
-                </div>
+                </Link>
               ))
             }
           </div>
@@ -210,7 +218,7 @@ function Home() {
         <div className=' mx-auto w-[90vw] md:w-[80vw]  pt-16'>
           <h1 className='heading text-center mt-4' >Achievements</h1>
 
-          <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <p className='sub-heading mx-auto  text-center mt-6'>Our latest Achievement 2024</p>
           <div className='flex flex-col md:flex-row gap-5 my-10'>
             {
               achievementsData.map((item) => (
@@ -224,7 +232,7 @@ function Home() {
         <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading mt-4' >Upcoming Activity</h1>
           <div className='flex flex-row items-center justify-between'>
-            <p className='sub-heading mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p className='sub-heading mt-6'>Upcoming Activities at Bangabandhu Sheikh Mujibur Rahman Digital University (BDU)  </p>
             <Link to="/notice" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</Link>
           </div>
 
@@ -234,9 +242,9 @@ function Home() {
                 <Link to="/notice">
                   <div className='md:w-[38vw] flex flex-col md:flex-row gap-2'>
                     <div className='md:w-1/2  relative'>
-                      <img src={upcoming} className='w-full rounded-md'></img>
+                      <img src={item.image} className='w-full rounded-md'></img>
                       <div className='bg-primary w-20 h-20 absolute -right-5 bottom-0 flex items-center p-4'>
-                        <p className='text-white text-center'>8 NOV</p>
+                        <p className='text-white text-center'>{item.date}</p>
                       </div>
                     </div>
                     <div className='md:w-1/2 p-5 flex flex-col gap-2'>
@@ -254,7 +262,7 @@ function Home() {
         <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading mt-4' >Latest News</h1>
           <div className='flex flex-row items-center justify-between'>
-            <p className='text-sm text-black mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p className='text-sm text-black mt-6'>Latest News at Bangabandhu Sheikh Mujibur Rahman Digital University            </p>
             {/* <NavLink to="/" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white text-sm md:text-ba'>Learn More</NavLink> */}
           </div>
 
@@ -274,7 +282,7 @@ function Home() {
                     <p className='text-primary text-sm'>{item.agenda}</p>
 
                     <h2 className='font-semibold text-xl md:text2xl text-[#06040A]'>{item.title}</h2>
-                    <p className='text-black text-sm'>{item.description}</p>
+                    <p className='text-black text-sm'>{item.description.slice(0, 130) + "..."}</p>
                   </div>
                 </div>
               ))
@@ -286,7 +294,8 @@ function Home() {
         <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading text-center mt-4' >Industry Collaboration</h1>
 
-          <p className='sub-heading mx-auto  text-center mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <p className='sub-heading mx-auto  text-center mt-6'>BDU's IRE Department fosters robust industry collaborations to enhance learning, promote innovation, and provide valuable opportunities for students and faculty.
+          </p>
           <div className='flex flex-row justify-between gap-5 my-10 py-10 bg-[#081f51] overflow-x-auto px-4'>
             <img src="/assets/home/logo2.png" className='h-16'></img>
             <img src="assets/home/logo1.png" className='h-16'></img>

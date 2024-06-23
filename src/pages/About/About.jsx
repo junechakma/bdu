@@ -58,22 +58,22 @@ function About() {
 
     return (
         <>
-            <div className='bg-white'>
+            <div className='bg-white text-black'>
                 <div className=''>
                     <div className='pt-16 bg-light relative' >
-                        <h1 className='text-2xl md:text-4xl font-semibold text-center pb-5'>About Software Engineering at  BDU</h1>
+                        <h1 className='text-2xl md:text-4xl font-semibold text-center pb-5'>Department of Internet of Things and Robotics Engineering in BDU                        </h1>
 
-                        <p className='text-center pb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            <br />
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p className='text-center pb-10 w-[50vw] mx-auto'>The department is dedicated to providing a dynamic learning environment that nurtures creativity, critical thinking, and problem-solving skills among our students.
+                        </p>
                         <img src={heroImage} alt='' className='w-full rounded-xl z-10'></img>
                     </div>
 
 
                     <div className='w-[90vw] md:w-[80vw] mx-auto bg-white p-6 md:p-20 flex flex-col gap-10 rounded-xl shadow-md -translate-y-10 md:-translate-y-24'>
                         <h1 className='text-3xl text-center'>Mission and Vission</h1>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        <p>Our mission is to provide a dynamic learning environment that cultivates creativity, critical thinking, and problem-solving skills among students. We aim to deliver a rigorous curriculum encompassing sensor networks, embedded systems, artificial intelligence, machine learning, control systems, and robotics algorithms. Through theoretical coursework, hands-on laboratory sessions, and real-world projects, we equip students with both theoretical knowledge and practical expertise in IoT and Robotics Engineering. We are committed to maintaining industry relevance through faculty expertise, collaboration with industry partners, and participation in national and international research collaborations. Our goal is to foster innovation, entrepreneurship, and lifelong learning among students, preparing them to contribute to global and national markets with sustainable technological advancements and solutions.                        "</p>
+                        <p>To be a globally recognized leader in IoT and Robotics Engineering education and research, empowering students to innovate and solve complex challenges through interdisciplinary knowledge and cutting-edge technology. To become a leading center of excellence in IoT and Robotics Engineering, renowned for our world-class research, exceptional graduates, and transformative impact on industry and society. We envision a future where our graduates are at the forefront of technological innovation, leading the way in the development of intelligent and interconnected systems that enhance efficiency, sustainability, and quality of life.
+                        </p>
                     </div>
 
                 </div>
@@ -85,12 +85,13 @@ function About() {
                     </div>
                     <div className='md:w-1/2 flex flex-col items-center md:items-start gap-8'>
                         <p className='text-primary text-xl font-bold'>Chairman’s Talk</p>
-                        <h1 className='tetx-xl md:text-3xl font-bold w-4/5 text-center md:text-left'>Education is the Most powerfull Weapon</h1>
-                        <p className='text-gray text-center md:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <h1 className='tetx-xl md:text-3xl font-bold w-4/5 text-center md:text-left'>Explore the Future of Technology with IRE at BDU                        </h1>
+                        <p className='text-gray text-center md:text-left'>The department is trying to realize both the government's and this university's ambition for a "smart" Bangladesh. We want our graduates to be entrepreneurs as well as innovators who contribute to our communities and the economy. Cocurricular activities, programming competitions, software and hardware projects, workshops, training opportunities, industrial attachments, and research projects are all available to the department's students. We have experienced and well-qualified faculty in this field. For maintaining a cordial and healthy teacher-student relationship, a pleasant and competitive environment exists here. I invite you to look around and learn more about our department, undergraduate programs, faculty members, modern laboratories, and the numerous activities that take place in the IRE department. </p>
                         <div className='w-4/5 '>
-                            <p>Prof Dr </p>
-                            <p>Chairman, Dept of Software Enigneering
-                                Bangabandhu Sheikh Mujibur Rahman Digital University, Bangladesh</p>
+                            <p>Samsuddin Ahmed  </p>
+                            <p>Assistant Professor and Chairman</p>
+                            <p> Department of Internet of Things and Robotics Engineering (IRE)</p>
+                            <p>Email: samsuddin0001@bdu.ac.bd </p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@ function About() {
                         <div className='pt-10 flex flex-col md:flex-row gap-5 my-10'>
                             {
                                 pathData.map((item) => (
-                                    <GradientCard key={item.id} item={item}  />
+                                    <GradientCard key={item.id} item={item} />
                                 ))
                             }
                         </div>

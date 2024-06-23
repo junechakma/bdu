@@ -14,6 +14,7 @@ import AcademicIndex from '../pages/Acaddemic/AcademicIndex'
 import Research from '../pages/Research/Research'
 import DetailsPage from '../pages/Details'
 import Postgrad from '../pages/Acaddemic/Postgrad'
+import ComingSoon from '../components/ComingSoon'
 
 export const router = createBrowserRouter([
     {
@@ -65,7 +66,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/training-programs',
-                element: <Undergrade />
+                element: <ComingSoon />
             },
             {
                 path: "/peoples",

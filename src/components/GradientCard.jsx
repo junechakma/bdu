@@ -12,7 +12,7 @@ function GradientCard({ item}) {
             <img src={ item.image} className='w-full h-full object-cover opacity-70 rounded-xl' />
             <div className='p-5 flex flex-col gap-2 md:gap-3 justify-center bg-gradient-to-b from-transparent to-[#0B108A] absolute bottom-0  md:top-1/2 '>
 
-                <h2 className='title text-[#06040A]'>{ item.title}</h2>
+                <h2 className='text-xl font-semibold text-[#06040A]'>{ item.title}</h2>
                 <p className='text-white text-sm'>{ item.description.slice(0,130)+"..."}</p>
 
             </div>
