@@ -34,7 +34,7 @@ const images = [
     "./assets/all/11.png",
     "./assets/all/12.png",
     "./assets/all/13.png",
-    "./assets/all/14.jpg",
+    // "./assets/all/14.jpg",
     "./assets/all/15.png",
 ];
 

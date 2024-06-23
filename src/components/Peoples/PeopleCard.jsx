@@ -14,7 +14,7 @@ const PeopleCard = ({ id, image, name, designation, email }) => {
             onClick={handleNavigate}
         >
             <div className='flex items-center justify-center w-full h-full overflow-hidden'>
-                <img src={image} alt={name} className="w-full h-full object-contain" />
+                <img src={image} alt={name} className="w-full h-full object-cover" />
             </div>
 
             <div className="bg-[#544E5D] p-6 text-white flex flex-col rounded-md">

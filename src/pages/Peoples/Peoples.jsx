@@ -50,6 +50,23 @@ const lecturers= [
             { degree: 'Bachelor of Science (Engg.) in Computer Science and Engineering, 2014', institution: 'University of Chittagong, Chittagong, Bangladesh' },
         ],
     },
+    {
+    id: 4,
+    image: '/assets/all/20.jpg',
+    name: 'Mahir Mahbub',
+    designation: 'Lecturer',
+    email: 'mahbub0001@bdu.ac.bd',
+    telephone: '01732687621',
+    contact: 'Kaliakair, Gazipur-1750, Bangladesh.',
+    researchInterest: 'Natural Language Processing, Artificial Intelligence & Machine Learning, Software Engineering, Information Security',
+    academicBackground: [
+      { degree: 'Junior School Certificate in General, 2008', institution: 'Board of Intermediate and Secondary Education Rajshahi, Rajshahi, Bangladesh' },
+      { degree: 'Secondary School Certificate in Science, 2013', institution: 'Board of Intermediate and Secondary Education Rajshahi, Rajshahi, Bangladesh' },
+      { degree: 'Higher Secondary Certificate in Science, 2015', institution: 'Board of Intermediate and Secondary Education Rajshahi, Rajshahi, Bangladesh' },
+      { degree: 'B.Sc in Software Engineering in Software Engineering, 2019', institution: 'Institute of Information Technology, University of Dhaka, Dhaka, Bangladesh' },
+      { degree: 'M.Sc. in Software Engineering in Software Engineering, 2021', institution: 'Institute of Information Technology, University of Dhaka, Dhaka, Bangladesh' },
+    ],
+    }
 ]
 const Peoples = () => {
     return (

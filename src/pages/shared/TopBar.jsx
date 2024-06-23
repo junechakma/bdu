@@ -6,13 +6,13 @@ function TopBar() {
     const [visible, setVisible] = useState(false)
     return (
         <>
-            <div className={`${!visible  ? 'w-full -translate-y-44 md:-translate-y-[90%] transition-transform duration-300 absolute z-20' : 'w-full translate-y-0 transition-transform duration-300 absolute z-20' } `}>
+            <div className={`${!visible ? 'w-full -translate-y-44 md:-translate-y-[90%] transition-transform duration-300 absolute z-20' : 'w-full translate-y-0 transition-transform duration-300 absolute z-20'} `}>
                 <div className=" w-full flex flex-row ">
-                    <div className='bg-dark py-3 w-1/2 px-4 md:pl-[10vw]'>
+                    <div className='bg-dark py-3 w-1/2 px-4 md:pl-[5vw]'>
                         <img src={logo1}></img>
                         <p className='text-white pt-2 text-sm md:text-lg'>Faculty of Cyber Physical Systems</p>
                     </div>
-                    
+
                     <div className='bg-[#D9D9D9] flex flex-col justify-between py-3 w-full pr-[10vw]'>
                         <div className='hidden md:flex justify-end relative'>
                             {/* search */}
@@ -23,13 +23,16 @@ function TopBar() {
                             </button>
                         </div>
 
-                        <div className='flex flex-row pt-5 justify-between'>
-                            <ul className='flex flex-col md:flex-row pl-5 gap-x-5 text-dark md:text-lg'>
+                        <div className='w-full flex flex-row pt-5 justify-between'>
+                            <ul className='flex flex-col md:flex-row pl-2 gap-x-5 text-dark md:text-lg items-center'>
                                 <Link to="https://bdu.ac.bd/">BDU Website</Link>
                                 <Link to="https://moodle.bdu.ac.bd/login/" >Moodle</Link>
                                 <Link to="https://ums.bdu.ac.bd/">UMS</Link>
+                                <Link to="https://dashboard.ire.vercel.com" className='bg-primary hover:bg-blue-600 text-white px-4 py-1 rounded-md text-center flex items-center justify-center'>
+                                    Login
+                                </Link>
                             </ul>
-                            <p className='hidden md:block text-lg'>Department of Internet of Things and Robotics Engineering </p>
+                            <p className='hidden md:block text-lg pl-10'>Department of Internet of Things and Robotics Engineering </p>
                         </div>
                     </div>
                 </div>

@@ -232,7 +232,7 @@ function Home() {
         <div className='mx-auto  w-[90vw] md:w-[80vw] pt-16'>
           <h1 className='heading mt-4' >Upcoming Activity</h1>
           <div className='flex flex-row items-center justify-between'>
-            <p className='sub-heading mt-6'>Upcoming Activities at Bangabandhu Sheikh Mujibur Rahman Digital University (BDU)  </p>
+            <p className=' mt-6'>Upcoming Activities at Bangabandhu Sheikh Mujibur Rahman Digital University (BDU)  </p>
             <Link to="/notice" className='px-4 py-2 rounded-lg border-2  text-primary hover:bg-primary hover:text-white'>Learn More</Link>
           </div>
 
