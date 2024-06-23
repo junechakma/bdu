@@ -28,7 +28,7 @@ function TopBar() {
                                 <Link to="https://bdu.ac.bd/">BDU Website</Link>
                                 <Link to="https://moodle.bdu.ac.bd/login/" >Moodle</Link>
                                 <Link to="https://ums.bdu.ac.bd/">UMS</Link>
-                                <Link to="https://dashboard.ire.vercel.com" className='bg-primary hover:bg-blue-600 text-white px-4 py-1 rounded-md text-center flex items-center justify-center'>
+                                <Link to="https://dashboardire-pallabs-projects-34abc5cf.vercel.app/" className='bg-primary hover:bg-blue-600 text-white px-4 py-1 rounded-md text-center flex items-center justify-center'>
                                     Login
                                 </Link>
                             </ul>

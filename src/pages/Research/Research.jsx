@@ -1,4 +1,5 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 const researchAreas = [
     {
@@ -116,6 +117,21 @@ const researchAreas = [
 ];
 
 const Research = () => {
+    const [researchPosts, setResearchPosts] = useState([]);
+    useEffect(() => {
+        const fetchResearchPosts = async () => {
+            try {
+                const response = await axios.get('https://bdu-swe-dept.vercel.app/all-research');
+                setResearchPosts(response.data);
+                console.log(response.data);
+            } catch (error) {
+                console.error('Error fetching research posts:', error);
+            }
+        };
+        fetchResearchPosts()
+    }, [])
+
+    console.log(researchPosts)
     return (
         <div>
             <div className="flex items-center justify-center py-10 md:py-16 bg-blue-600 text-white relative overflow-hidden min-h-[40vh]">
@@ -134,10 +150,10 @@ const Research = () => {
             <div className="w-[90%] md:w-[80vw] mb-10 mx-auto  px-4 py-16">
                 <h2 className="text-xl md:text-2xl font-bold mb-4 text-black pb-10 text-center">The Department of IoT and Robotics Engineering (IRE) facilitates environments for the following research and publication areas:                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 gap-4">
-                    {researchAreas.map((area, index) => (
-                        <Link to={area.link} target='_blank' key={index} className="flex items-start p-4 bg-white shadow rounded-lg text-black">
+                    {researchPosts.map((area, index) => (
+                        <Link to={area.description} target='_blank' key={index} className="flex items-start p-4 bg-white shadow rounded-lg text-black">
 
-                            <img src={area.icon} alt={`${area.title} icon`} className="w-10 h-10 md:w-12 md:h-12" />
+                            <img src="/assets/home/icon1.png" alt={`${area.title} icon`} className="w-10 h-10 md:w-12 md:h-12" />
 
                             <div className="ml-4">
                                 <h3 className="md:text-lg ">{area.title}</h3>
