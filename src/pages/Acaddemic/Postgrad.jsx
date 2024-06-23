@@ -42,7 +42,7 @@ const Postgrad = () => {
     return (
         <div className=" min-h-screen py-10 text-black">
             <div className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-md">
-                <h1 className="text-3xl font-semibold text-center mb-6">IoT and Robotics Courses</h1>
+                <h1 className="text-2xl md:text-4xl font-semibold text-center mb-6">IoT and Robotics Courses</h1>
 
                 <div className="mb-8">
                     <h2 className="text-xl font-semibold mb-4">Prerequisites</h2>

@@ -10,7 +10,7 @@ function TopBar() {
                 <div className=" w-full flex flex-row ">
                     <div className='bg-dark py-3 w-1/2 px-4 md:pl-[10vw]'>
                         <img src={logo1}></img>
-                        <p className='text-white pt-2 text-sm md:text-lg'>Department of Cyber Physical System</p>
+                        <p className='text-white pt-2 text-sm md:text-lg'>Faculty of Cyber Physical Systems</p>
                     </div>
                     
                     <div className='bg-[#D9D9D9] flex flex-col justify-between py-3 w-full pr-[10vw]'>

@@ -1,12 +1,11 @@
 import { IoMdArrowDropright } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
 
-const PeopleCard = ({ image, name, designation, email }) => {
-
+const PeopleCard = ({ id, image, name, designation, email }) => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-        navigate('/faculty-details/1');
+        navigate(`/faculty-details/${id}`);
     };
 
     return (
@@ -15,7 +14,7 @@ const PeopleCard = ({ image, name, designation, email }) => {
             onClick={handleNavigate}
         >
             <div className='flex items-center justify-center w-full h-full overflow-hidden'>
-                <img src={image} alt={name} className="w-full h-full object-cover" />
+                <img src={image} alt={name} className="w-full h-full object-contain" />
             </div>
 
             <div className="bg-[#544E5D] p-6 text-white flex flex-col rounded-md">
@@ -30,7 +29,7 @@ const PeopleCard = ({ image, name, designation, email }) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default PeopleCard;

@@ -7,7 +7,7 @@ const GalleryPage = () => {
             <div className="py-4 md:my-16 flex  flex-col items-center justify-center">
 
                 <h1 className="heading text-center">Gallery</h1>
-                <p className="sub-heading text-xl ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p className="sub-heading text-xl ">Welcome to the Building Gallery of Bangabandhu Sheikh Mujibur Rahman Digital University (BDU). Our campus is designed to foster an environment of innovation, collaboration, and learning.   </p>
             </div>
 
             <Gallery />

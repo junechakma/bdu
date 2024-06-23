@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { IoMdArrowDropleftCircle, IoMdArrowDropright, IoMdArrowDroprightCircle, IoMdClose } from "react-icons/io";
+import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle, IoMdClose } from "react-icons/io";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 // import PhotoAlbum from "react-photo-album";
 // import Lightbox from "yet-another-react-lightbox";
 // import "yet-another-react-lightbox/styles.css";
@@ -20,10 +21,21 @@ import Modal from 'react-modal';
 // ];
 
 const images = [
-    "./gallery/1.png",
-    "./gallery/2.png",
-    "./gallery/3.png",
-    "./gallery/4.png"
+    "./assets/all/1.jpg",
+    "./assets/all/2.jpg",
+    "./assets/all/3.jpg",
+    "./assets/all/4.jpg",
+    "./assets/all/5.jpg",
+    "./assets/all/6.png",
+    "./assets/all/7.jpg",
+    "./assets/all/8.jpg",
+    "./assets/all/9.jpg",
+    "./assets/all/10.png",
+    "./assets/all/11.png",
+    "./assets/all/12.png",
+    "./assets/all/13.png",
+    "./assets/all/14.jpg",
+    "./assets/all/15.png",
 ];
 
 Modal.setAppElement('#root');
@@ -53,13 +65,13 @@ const Gallery = () => {
         <div className="p-4">
             <h1 className="text-2xl font-bold mb-4">Building Gallery</h1>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4  gap-2 md:gap-4">
                 {images.map((image, index) => (
                     <img
                         key={index}
                         src={image}
                         alt={`Gallery ${index}`}
-                        className={`${index == 0 && 'col-span-3'} ${index == 3 && 'col-span-3'} cursor-pointer w-full h-full object-cover`}
+                        className={`${index == 0 && 'md:col-span-3'} ${index == 3 && 'md:col-span-3'} cursor-pointer w-full h-full object-cover`}
                         onClick={() => openModal(index)}
                     />
                 ))}
@@ -83,17 +95,17 @@ const Gallery = () => {
                         onClick={prevImage}
                         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-6 m-2"
                     >
-                        &larr;
+                        <FaArrowLeft size={32}/>
                     </button>
                     <button
                         onClick={nextImage}
                         className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-6 m-2"
                     >
-                        &rarr;
+                         <FaArrowRight  size={32}/>
                     </button>
                 </div>
 
-                <div className="relative bg-white p-4">
+                <div className="relative bg-white p-2 md:p-4">
                     <button
                         onClick={closeModal}
                         className="absolute -top-4 -right-4 bg-white bg-opacity-35 rounded-full p-2 m-2 md:hidden shadow-md"
@@ -104,16 +116,16 @@ const Gallery = () => {
                         onClick={prevImage}
                         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 m-2 md:hidden"
                     >
-                        <IoMdArrowDropleftCircle/>
+                        <IoMdArrowDropleftCircle color="yellow"  size={26}/>
                     </button>
                     <button
                         onClick={nextImage}
                         className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 m-2 md:hidden"
                     >
-                        <IoMdArrowDroprightCircle/>
+                        <IoMdArrowDroprightCircle color="yellow" size={26}/>
                     </button>
 
-                    <img src={images[currentImageIndex]} alt="Current" className="max-w-full max-h-full" />
+                    <img src={images[currentImageIndex]} alt="Current" className="max-w-[80vw] max-h-[80vh]" />
                 </div>
             </Modal>
         </div>

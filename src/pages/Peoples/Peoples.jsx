@@ -2,43 +2,55 @@ import PeopleCard from '../../components/Peoples/PeopleCard';
 
 const headOfDepartment = [
     {
-        image: '/assets/peoples/dean.png',
-        name: 'Head Name',
+        id: 1,
+        image: './assets/all/15.jpg',
+        name: 'Samsuddin Ahmed',
         designation: 'Head of Department',
-        email: 'headofdept@gmail.com',
-    },
-];
-
-const professors = [
-    {
-        image: '/assets/peoples/person1.png',
-        name: 'Professor Name 1',
-        designation: 'Professor',
-        email: 'professor1@gmail.com',
-    },
-    {
-        image: '/assets/peoples/dean.png',
-        name: 'Professor Name 2',
-        designation: 'Professor',
-        email: 'professor2@gmail.com',
+        email: 'samsuddin0001@bdu.ac.bd',
+        telephone: '01944897313',
+        contact: 'Kaliakair, Gazipur-1750, Bangladesh.',
+        website: 'https://samsuddin.bsmrdu.ac.bd/',
+        researchInterest: 'Machine Learning, Information Security',
+        academicBackground: [
+            { degree: 'Masters in Computer Engineering, 2020', institution: 'Chosun University, Gwangju, South Korea' },
+            { degree: 'Bachelor in Computer Science and Engineering, 2010', institution: 'University of Chittagong, Chattogram, Bangladesh' },
+        ],
     },
 ];
 
 const assistantProfessors = [
     {
-        image: '/assets/peoples/person2.png',
-        name: 'Assistant Professor Name 1',
+        id: 2,
+        image: './assets/all/16.jpg',
+        name: 'Farzana Akter',
         designation: 'Assistant Professor',
-        email: 'assistantprof1@gmail.com',
+        email: 'farzana0001@bdu.ac.bd',
+        telephone: '01741582031',
+        contact: 'Kaliakair, Gazipur-1750, Bangladesh.',
+        researchInterest: 'Machine Learning, NLP, Data Analysis, IoT, Blockchain',
+        academicBackground: [
+            { degree: 'Master of Science (MSc.) in Computer Science and Engineering, 2014', institution: 'Jahangirnagar University, Bangladesh' },
+            { degree: 'Bachelor of Science (BSc.) in Computer Science & Engineering, 2013', institution: 'Jahangirnagar University, Bangladesh' },
+        ],
     },
-    {
-        image: '/assets/peoples/person3.png',
-        name: 'Assistant Professor Name 2',
-        designation: 'Assistant Professor',
-        email: 'assistantprof2@gmail.com',
-    },
+    
 ];
-
+const lecturers= [
+    {
+        id: 3,
+        image: './assets/all/17.jpg',
+        name: 'Suman Saha',
+        designation: 'Lecturer',
+        email: 'suman0001@bdu.ac.bd',
+        telephone: '01912127578',
+        contact: 'Kaliakair, Gazipur-1750, Bangladesh.',
+        researchInterest: 'IoT, Deep Learning, Machine Learning, Computer Vision, Wireless Adhoc Networking',
+        academicBackground: [
+            { degree: 'Masters of Science (M.Sc.) in Computer Science & Engineering, 2019', institution: 'Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh' },
+            { degree: 'Bachelor of Science (Engg.) in Computer Science and Engineering, 2014', institution: 'University of Chittagong, Chittagong, Bangladesh' },
+        ],
+    },
+]
 const Peoples = () => {
     return (
         <div className='bg-white pb-10'>
@@ -46,9 +58,7 @@ const Peoples = () => {
                 <div className='h-[60vh] w-full flex items-center pt-[3%] flex-col gap-10 bg-light relative'>
                     <h1 className="text-2xl md:text-4xl font-semibold text-black z-10">Faculty</h1>
                     <p className="text-center z-10">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        <br />
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Active Faculty List: Department of Internet of Things and Robotics Engineering (IRE)
                     </p>
                     <img src='/assets/home/bg/wave.png' className='object-contain w-3/4 -left-36 absolute -bottom-36' />
                 </div>
@@ -56,9 +66,7 @@ const Peoples = () => {
                 <div className='-translate-y-40 bottom-0 w-[90vw] md:w-[70%] shadow-md  bg-white grid grid-cols-1 md:grid-cols-2  text-black rounded-md'>
                     <img src='/assets/peoples/dean.png' className='w-full object-contain self-center' />
                     <div className='bg-[#544E5D] p-4 md:p-10 text-white pt-10 md:pt-24'>
-                        <h1 className='text-2xl font-semibold text-white pb-6'>Dean Name</h1>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </p>
+                        <h1 className='text-2xl font-semibold text-white pb-6'>Dean Name (Not Appointed)</h1>
                     </div>
                 </div>
             </div>
@@ -71,6 +79,7 @@ const Peoples = () => {
                             headOfDepartment.map((item, index) => (
                                 <PeopleCard
                                     key={index}
+                                    id={item.id}
                                     image={item.image}
                                     name={item.name}
                                     designation={item.designation}
@@ -88,6 +97,24 @@ const Peoples = () => {
                             assistantProfessors.map((item, index) => (
                                 <PeopleCard
                                     key={index}
+                                    id={item.id}
+                                    image={item.image}
+                                    name={item.name}
+                                    designation={item.designation}
+                                    email={item.email}
+                                />
+                            ))
+                        }
+                    </div>
+                </div>
+                <div>
+                    <h1 className='text-2xl text-black font-semibold '>Lecturers</h1>
+                    <div className='flex gap-6 my-10 flex-wrap'>
+                        {
+                            lecturers.map((item, index) => (
+                                <PeopleCard
+                                    key={index}
+                                    id={item.id}
                                     image={item.image}
                                     name={item.name}
                                     designation={item.designation}

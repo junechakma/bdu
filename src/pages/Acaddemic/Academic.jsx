@@ -66,40 +66,39 @@ const Academic = () => {
         <div className='bg-white pb-10'>
             <div className='relative flex flex-col items-center justify-center h-full'>
 
-                <div className='h-[60vh] w-full flex items-center pt-[6%]  flex-col gap-4 md:gap-10 bg-light relative' >
-                    <h1 className="text-2xl md:text-4xl font-semibold text-black z-10 text-center">Software Engineering Curriculum</h1>
-                    <p className="text-center z-10">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        <br />
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div className='md:h-[60vh] w-[90vw] md:w-full flex items-center pt-[6%]  flex-col gap-4 md:gap-10 bg-light relative pb-6 md:pb-0' >
+                    <h1 className="text-2xl md:text-4xl font-semibold text-black z-10 text-center">Curriculum for IoT and Robotics Engineering (IRE)                    </h1>
+                    <p className="text-center z-10 md:w-[70vw]">
+                    The Department of Internet of Things and Robotics Engineering (IRE) at Bangabandhu Sheikh Mujibur Rahman Digital University offers a comprehensive and dynamic curriculum designed to equip students with the knowledge and skills necessary to excel in the rapidly evolving fields of IoT and robotics. Our curriculum combines theoretical coursework, hands-on laboratory sessions, and real-world projects to provide a well-rounded educational experience
                     </p>
                     <img src='/assets/home/bg/wave.png' className='object-contain w-3/4 -left-36 absolute -bottom-36'/>
                 </div>
 
-                <div className='-translate-y-40 bottom-0 w-[80%] md:w-[70%] shadow-md  bg-white flex flex-col gap-4 px-8 md:px-20 py-10 text-sm text-black rounded-md'>
+                <div className='translate-y-0 md:-translate-y-40 bottom-0 w-[90%] md:w-[70%] shadow-md  bg-white flex flex-col gap-4 px-4 md:px-20 py-10 text-sm text-black rounded-md'>
                     <div className='flex flex-col items-center gap-4'>
                         <h1 className='text-2xl font-semibold text-black '>Objective</h1>
-                        <p className='text-center'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."         </p>
+                        <p className='text-center'>"IRE is dedicated to developing technological expertise among students by equipping them with advanced knowledge in IoT and robotics. This includes fostering proficiency in programming, embedded systems, artificial intelligence, and control systems. Emphasizing hands-on learning, the curriculum integrates practical experience through laboratory sessions and real-world projects, encouraging innovation and problem-solving skills. The department prepares students for careers in rapidly evolving tech industries by providing exposure to industry standards, tools, and practices through internships and collaborations. Additionally, the IRE department promotes research and development by engaging students in cutting-edge projects and encouraging continuous learning to stay updated with the latest technological advancements.                         "         </p>
                     </div>
 
                     <div className='flex flex-col gap-4'>
                         <h1 className='text-2xl font-semibold text-black '>Outcome:</h1>
                         <ul className='text-left'>
-                            <li>CO1: Use a systems approach to design problems; </li>
-                            <li>CO2: Identify and analyze a number of sub-systems commonly used in mechanical design;  </li>
-                            <li>CO3: Design such sub-systems using both first principles and according to standard processes; </li>
+                            <li>CO1: Use a systems approach to design problems;                            </li>
+                            <li>CO2: Identify and analyze a number of sub-systems commonly used in mechanical design;                            </li>
+                            <li>CO3: Design such sub-systems using both first principles and according to standard processes;
+                            </li>
                         </ul>
                     </div>
 
                     <div className='flex flex-col items-center gap-4'>
                         <h1 className='text-2xl font-semibold text-black '>Contents</h1>
-                        <p className='text-center'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        <p className='text-center'>"The curriculum of the IRE department is designed to provide a comprehensive education in IoT and robotics engineering, encompassing core and specialized courses along with hands-on laboratory sessions."
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div className='w-[90%] md:w-[80vw] mb-10 mx-auto '>
+            <div className='w-[90%] md:w-[80vw] mb-10 mx-auto mt-10'>
 
                 <div className="md:p-10 bg-white shadow-md mb-16 rounded-md">
                     <h2 className="text-2xl font-semibold mb-4 text-black pb-6">Course Outcomes:</h2>
